@@ -1,4 +1,4 @@
-This documents **0.2.0 for Horizon's older modding API**, retained for a separate GitHub release alongside 0.3.1. See [README.md](README.md#choose-your-version) to choose the matching version. Package paths and build hashes below describe archived local tests; the 0.2 packages are not yet uploaded as their own GitHub release.
+This documents **0.2.0 for Horizon's older modding API**, released separately alongside 0.3.1. See [README.md](README.md#choose-your-version) to choose the matching version. Download the two package files from the [v0.2.0 GitHub release](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.2.0); package paths and build hashes below describe the archived local tests.
 
 # Iron Furnaces for Horizon
 

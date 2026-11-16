@@ -12,7 +12,7 @@ Both versions include the upgraded furnaces, electric factories, generators and 
 
 | Mod version | Required Horizon version | Required mod files | Documentation and availability |
 | --- | --- | --- | --- |
-| **0.2.0 — older modding API** | Nightly **2026-11-13**, commit `9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0` | **Both** `ironfurnaces-0.2.0.hmod` and `ironfurnaces-0.2.0.hnmod` | [Legacy instructions](LEGACY-0.2.md) and [validation](VALIDATION.md). Local packages are retained; a separate GitHub release is planned. |
+| **0.2.0 — older modding API** | Nightly **2026-11-13**, commit `9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0` | **Both** `ironfurnaces-0.2.0.hmod` and `ironfurnaces-0.2.0.hnmod` | [Legacy instructions](LEGACY-0.2.md), [validation](VALIDATION.md) and the [v0.2.0 GitHub release](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.2.0). |
 | **0.3.1 — new modding API** | Commit `85b5bcca7c79bb470b90bdb5914b413aa66fe7ae` and its matching SDK | `ironfurnaces-0.3.1.hmod` only | [Published prerelease](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.3.1) and [validation](VALIDATION-0.3.md). |
 
 These packages are not interchangeable. Use one version per instance; do not enable the 0.2 pair alongside 0.3.1. The older version meant here is **0.2.0**, not the withdrawn 0.3.0 prerelease. Both versions retain the original Apache-2.0 license and credits.
@@ -122,29 +122,3 @@ The source/content GitHub workflow does not claim to run the full game. See [0.3
 
 Development references: [mod guide at the pinned revision](https://github.com/horizon-rust/horizon/blob/85b5bcca7c79bb470b90bdb5914b413aa66fe7ae/docs/modding/src/start/first-mod.md), [pinned Horizon source](https://github.com/horizon-rust/horizon/tree/85b5bcca7c79bb470b90bdb5914b413aa66fe7ae). The public website guide may describe an earlier package format.
 
-## Handoff for the next development chat
-
-Status as of **16 November 2026**: migration, testing and publication are complete. The current release is [v0.3.1](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.3.1), from commit `3075b4950f80c2c7f0906b609ea06220213ed3ed`. Its [GitHub checks passed](https://github.com/allenplay7/iron-furnaces-horizon/actions/runs/43813877850), including the real Horizon package reader and cross-platform archive reproducibility. The package was then installed from that exact GitHub release into a disposable instance; Horizon selected the already-tested native build without recompilation. See [installation evidence](validation/v3/0.3.1/github-install.log).
-
-- Start with `native-v3/`, `tools/package_v3.py`, `tools/check_v3.py`, `tools/check_package.py` and [the validation report](VALIDATION-0.3.md). `native/` is the historical 0.2 implementation.
-- Planned follow-up: publish **0.2.0 separately alongside 0.3.1**. Its retained local artifacts are `dist/ironfurnaces-0.2.0.hmod`, `dist/ironfurnaces-0.2.0.hnmod` and `dist/SHA256SUMS`; the legacy source and packaging helper are `native/` and `tools/build.py`. Regenerate the legacy packages with the current license/credit notices before publishing and verify the resulting archives/checksums. These older artifacts are currently excluded by `.gitignore` and have not been uploaded as a release. Preserve the two-file installation instructions and the old Horizon pin when publishing them.
-- Keep the Horizon and mixin revisions pinned in `native-v3/horizon-mod.toml`. The build uses Rust 1.99.1. The newer API is incompatible with the November 13 Nightly; the existing working 0.2 installation and personal worlds were left intact.
-- Full validation passed: 28 Rust tests, 14 content tests, 16 power scenarios, 11 furnace scenarios, four extra scenarios, seven GUI groups and a real 0.2 saved-world migration. The 0.3.1 packaging fix has identical Rust sources/assets, and its rebuilt version additionally passed six gameplay/screen checks. Exact receipts and sanitized evidence are under `validation/v3/`.
-- Fixes to retain: do not register the machine block part twice; register the generator recipe type/serializer; edit the copier's actual inventory slot to avoid creative duplication; handle sneak-use in the first-use item hook; migrate old bare recipe IDs so saved paid work and XP survive; preserve the clean progress-arrow rendering.
-- Packaging traps: native archives reject arbitrary root Markdown names. The complete change notice is packaged as `NOTICE-MODIFICATIONS.md`; its source remains `MODIFICATIONS.md`. Use stored ZIP entries to avoid differences between compression libraries. The initial 0.3.0 prerelease was withdrawn; use 0.3.1. Keep the original Apache license and all credits in every distribution.
-- Not yet validated: dedicated servers, independent multiplayer, macOS and interoperability with other native mods. Optional Silver/Allthemodium recipes still require their material mods. These are remaining validation areas, not established failures.
-
-In the original development workspace, the following **untracked local helpers and caches** remain available; they are not included in GitHub clones or releases:
-
-| Local path | Purpose |
-| --- | --- |
-| `.build/migration-v3/source/horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae` | Exact engine source used for checks/builds |
-| `.build/migration-v3/sdk` | Completed prebuilt SDK; reuse it instead of rebuilding the engine |
-| `.build/migration-v3/run_build.py` | Launcher helper scoped to private test homes and that SDK |
-| `.build/migration-v3/run_game_tests.py` | Run a suite against the newest private native build with a fresh run directory |
-| `.build/migration-v3/under-test` | Standalone client bundle used by game tests |
-| `.build/migration-v3/game-home` and `launcher-home` | Disposable install/build homes; not the player's production instance |
-| `.build/migration-v3/power-08`, `smoke-03`, `extras-02`, `visual-02`, `save-upgrade-03` | Complete passing migration-suite runs |
-| `.build/migration-v3/power-031`, `smoke-031`, `visual-031` | Passing checks on the rebuilt 0.3.1 package |
-
-Run game suites sequentially because they share the standalone test bundle, and always choose a fresh run directory. Preserve private Minecraft resources and saves locally; do not publish them. The next chat can continue with a new requested feature or one of the unvalidated platforms without repeating this migration.
