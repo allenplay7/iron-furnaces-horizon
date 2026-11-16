@@ -65,6 +65,12 @@
     "mod_vocab.dll": "ba6aa9c5b97974877a29de441c956c1b20dee7ae976deb8f39d2c9d22c7c3d71",
     "std-f903e3d16df36da5.dll": "d0ad56bc27113cc091fa75f4a73824c9a5d92f64adb0083c8eb1e21c60c33324"
   },
-  "package_sha256": "206f54998c2ff7dfbcba1ee88c2d4fb383c643810f9217b562c5cc3cfded858b",
-  "old_game_sha256": "1747048f05b1f56d765c6b390018eca4cc9fbebbc588fed185b1feaad7b0292d"
+  "package_sha256": "5a18b27228432b41c35de3e7b3548bbe161217b1ea0707bab41df287c2709f0b",
+  "old_game_sha256": "1747048f05b1f56d765c6b390018eca4cc9fbebbc588fed185b1feaad7b0292d",
+  "archive_repack": {
+    "tested_archive_sha256": "206f54998c2ff7dfbcba1ee88c2d4fb383c643810f9217b562c5cc3cfded858b",
+    "released_archive_sha256": "5a18b27228432b41c35de3e7b3548bbe161217b1ea0707bab41df287c2709f0b",
+    "unchanged_entries": 578,
+    "content_comparison": "Every entry byte-identical; only ZIP compression changed to stored for cross-platform reproducibility"
+  }
 }

@@ -9,7 +9,7 @@ Tested on Windows 11 x64 on 16 November 2026, using the actual Horizon game, ren
 - Rust: 1.99.1; target: `x86_64-pc-windows-gnu`.
 - New prebuilt SDK format 6, release engine with `system-allocator`; optimized mod build.
 - Launcher build route: `prebuilt`, with no omitted mods. All eight function-replacement hooks compiled and were included.
-- Mod package: `ironfurnaces-0.3.0.hmod`, SHA-256 `206f54998c2ff7dfbcba1ee88c2d4fb383c643810f9217b562c5cc3cfded858b`.
+- Mod package: `ironfurnaces-0.3.0.hmod`, SHA-256 `5a18b27228432b41c35de3e7b3548bbe161217b1ea0707bab41df287c2709f0b`.
 
 [Build receipt and runtime hashes](validation/v3/build.json) identify the mod library, patch library and engine libraries. The tiny entry executable alone does not identify a prebuilt native game. The engine/SDK and preparer were built from the pinned source. A local Windows launcher icon/manifest workaround was needed to bootstrap its CLI; it did not change the game or mod implementation. Prepared Minecraft resources were regenerated with that revision's preparer and passed its completeness check.
 
@@ -26,7 +26,7 @@ The November 13 Nightly uses the older mod format and cannot load this release. 
 | Drops, explosion and configuration | 4 scenarios passed | [Results](validation/v3/extras/results.json) |
 | Real screen input and placement | 7 groups passed; 12 captures inspected | [Results](validation/v3/visual/results.json) |
 | Actual 0.2 world opened by 0.3 | Passed | [Results](validation/v3/save-upgrade/results.json) |
-| Package reproducibility | Identical SHA-256 from a clean Git-index checkout | Fixed entry order, timestamps, permissions and platform metadata |
+| Package reproducibility | Identical SHA-256 from a clean Git-index checkout | Stored ZIP entries; fixed entry order, timestamps, permissions and platform metadata |
 
 The power checks cover two/four/six factory lanes, component-aware auto split, blocked outputs, augment energy costs, generator fuel budgets and capacity pauses, ordinary/food/blasting/Rainbow Coal fuels, energy transfer, paid reservations across restart, per-face automation and hopper access, comparator and subtraction output, receiver binding, and a transmitter 1,014 blocks away in an initially unloaded chunk. They also exercise the nine-tier Rainbow generator network, seasonal skins, and settings copying/application/restart without duplicating the copier.
 
@@ -37,6 +37,8 @@ The extras check survival furnace drops and contents, retained transmitter energ
 The save migration check creates and saves a world using the actual 0.2 executable, then opens that same world with 0.3. After 57 old-version ticks, a furnace and electric factory both resume their 160-tick operation and produce output after the remaining 103 ticks. Inventories, custom item components, generator fuel budget and factory energy/reservations are retained. A discovered difference in vanilla recipe IDs (bare names in 0.2, namespaced names in the new API) is migrated once before fingerprint comparison; a Rust regression also verifies merged earned-experience counters and idempotence.
 
 ## Reproduce
+
+The release archive uses stored ZIP entries to avoid compression-library differences between Windows and Linux. All 578 entries were compared byte for byte with the archive used to stage the full game tests; their sources and assets are identical. The build receipt records both archive hashes. Repacking changed only the outer archive, so the validated native library hashes remain applicable.
 
 Build the package, use a Horizon game/SDK matching the pins, and prepare your own Minecraft 26.3 resources with that revision's preparer. The game tests accept explicit `--game`, `--ctl`, `--resources`, `--content` and a fresh `--run-dir`. The default content folder is the generated `.build/migration-v3/mod`.
 

@@ -35,15 +35,17 @@ def package():
         path.write_bytes(data)
     out = ROOT / 'dist' / f'ironfurnaces-{manifest["version"]}.hmod'
     out.parent.mkdir(exist_ok=True)
-    with zipfile.ZipFile(out, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+    # Stored entries avoid different zlib versions emitting different deflate
+    # streams on Windows/Linux. The small source package stays reproducible.
+    with zipfile.ZipFile(out, 'w', compression=zipfile.ZIP_STORED) as archive:
         for name, data in sorted(entries.items()):
             info = zipfile.ZipInfo(name, (2026, 1, 1, 0, 0, 0))
             info.create_system = 3  # Stable Unix metadata on every build platform.
-            info.compress_type = zipfile.ZIP_DEFLATED
+            info.compress_type = zipfile.ZIP_STORED
             info.external_attr = 0o100644 << 16
             archive.writestr(info, data)
     digest = hashlib.sha256(out.read_bytes()).hexdigest()
-    out.with_suffix('.hmod.sha256').write_text(f'{digest}  {out.name}\n', encoding='utf-8')
+    out.with_suffix('.hmod.sha256').write_text(f'{digest}  {out.name}\n', encoding='utf-8', newline='\n')
     print(json.dumps({'package': str(out), 'sha256': digest, 'files': len(entries), 'stage': str(stage)}, indent=2))
     return out
 
