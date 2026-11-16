@@ -26,14 +26,16 @@ jobs:
         run: python3 tools/check_v3.py --source .build/horizon --test
       - name: Check original art, recipes and registrations
         run: python3 tools/test_content.py
+      - name: Validate archive with Horizon's package reader
+        run: python3 tools/check_package.py --source .build/horizon
       - name: Check deterministic package
         shell: bash
         run: |
-          cp dist/ironfurnaces-0.3.0.hmod.sha256 /tmp/released.sha256
+          cp dist/ironfurnaces-0.3.1.hmod.sha256 /tmp/released.sha256
           python3 tools/package_v3.py
-          cmp /tmp/released.sha256 dist/ironfurnaces-0.3.0.hmod.sha256
-          cp dist/ironfurnaces-0.3.0.hmod.sha256 /tmp/first.sha256
+          cmp /tmp/released.sha256 dist/ironfurnaces-0.3.1.hmod.sha256
+          cp dist/ironfurnaces-0.3.1.hmod.sha256 /tmp/first.sha256
           python3 tools/package_v3.py
-          cmp /tmp/first.sha256 dist/ironfurnaces-0.3.0.hmod.sha256
+          cmp /tmp/first.sha256 dist/ironfurnaces-0.3.1.hmod.sha256
       # Full game tests need the matching SDK and privately prepared Minecraft resources.
       # This workflow deliberately claims source/content checks only.

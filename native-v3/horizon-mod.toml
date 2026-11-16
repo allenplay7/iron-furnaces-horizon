@@ -1,6 +1,6 @@
 id = "ironfurnaces"
 name = "Iron Furnaces"
-version = "0.3.0"
+version = "0.3.1"
 description = "Unofficial Rust port of Astryxion's Iron Furnaces: upgraded furnaces, electric factories, generators and wireless heating."
 authors = ["Astryxion", "pizzatime", "XenoMustache", "Horizon port contributors"]
 api = "0.2"

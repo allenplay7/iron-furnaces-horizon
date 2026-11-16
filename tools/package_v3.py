@@ -21,8 +21,11 @@ def package():
         entries[path.relative_to(native).as_posix()] = path.read_bytes()
     for name in ('Cargo.toml', 'Cargo.lock', 'horizon-mod.toml'):
         entries[name] = (native / name).read_bytes()
-    for name in ('LICENSE', 'NOTICE', 'MODIFICATIONS.md'):
+    for name in ('LICENSE', 'NOTICE'):
         entries[name] = (ROOT / name).read_bytes()
+    # Native archives accept root README/LICENSE/NOTICE prefixes, not arbitrary
+    # Markdown filenames. Preserve the complete modification notice under one.
+    entries['NOTICE-MODIFICATIONS.md'] = (ROOT / 'MODIFICATIONS.md').read_bytes()
     stage = ROOT / '.build/migration-v3/mod'
     stage.mkdir(parents=True, exist_ok=True)
     # Only our generated stage may be replaced; never touch a user's installed mod.

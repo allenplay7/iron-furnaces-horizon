@@ -1,0 +1,73 @@
+   Compiling serde_core v1.0.229
+   Compiling cfg-if v1.0.5
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+   Compiling syn v3.0.6
+   Compiling serde v1.0.229
+   Compiling serde_derive v1.0.229
+   Compiling generic-array v0.14.7
+   Compiling typenum v1.20.1
+   Compiling syn v2.0.119
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling foldhash v0.2.0
+   Compiling serde_json v1.0.151
+   Compiling rand_chacha v0.3.1
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling digest v0.10.7
+   Compiling rand v0.8.8
+   Compiling equivalent v1.0.2
+   Compiling cpufeatures v0.2.17
+   Compiling sha2 v0.10.9
+   Compiling phf_generator v0.11.3
+   Compiling winnow v1.0.4
+   Compiling bitflags v2.13.2
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling phf_codegen v0.11.3
+   Compiling serde_spanned v1.1.2
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling memchr v2.8.3
+   Compiling simd-adler32 v0.3.10
+   Compiling toml_writer v1.1.3+spec-1.1.0
+   Compiling toml v1.1.6+spec-1.1.0
+   Compiling unicode_names2_generator v2.0.0
+   Compiling horizon-mod-surface v0.1.0 (<workspace>\.build\migration-v3\source\horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae\crates\horizon-mod-surface)
+   Compiling hashbrown v0.17.1
+   Compiling crc32fast v1.5.2
+   Compiling wasmparser v0.261.0
+   Compiling indexmap v2.14.2
+   Compiling horizon-mod-source v0.1.0 (<workspace>\.build\migration-v3\source\horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae\crates\horizon-mod-source)
+   Compiling unicode_names2 v2.0.0
+   Compiling horizon-mod-point-shape v0.1.0 (<workspace>\.build\migration-v3\source\horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae\crates\horizon-mod-point-shape)
+   Compiling adler2 v2.0.1
+   Compiling wit-parser v0.261.0
+   Compiling horizon-game-discovery v0.1.0 (<workspace>\.build\migration-v3\source\horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae\crates\horizon-game-discovery)
+   Compiling prettyplease v0.2.37
+   Compiling horizon-mod-api-gen v0.1.0 (<workspace>\.build\migration-v3\source\horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae\crates\horizon-mod-api-gen)
+   Compiling miniz_oxide v0.9.1
+   Compiling zlib-rs v0.6.8
+   Compiling getrandom v0.4.3
+   Compiling flate2 v1.1.10
+   Compiling horizon-core v0.1.0 (<workspace>\.build\migration-v3\source\horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae\crates\horizon-core)
+   Compiling horizon-mod-vocab v0.1.0 (<workspace>\.build\migration-v3\source\horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae\crates\horizon-mod-vocab)
+   Compiling bytemuck_derive v1.12.1
+   Compiling bumpalo v3.20.3
+   Compiling windows-link v0.2.1
+   Compiling windows-sys v0.61.2
+   Compiling zopfli v0.8.4
+   Compiling bytemuck v1.25.2
+   Compiling horizon-mod-runtime v0.1.0 (<workspace>\.build\migration-v3\source\horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae\crates\horizon-mod-runtime)
+   Compiling miniz_oxide v0.8.9
+   Compiling horizon-mod-api-macros v0.1.0 (<workspace>\.build\migration-v3\source\horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae\crates\horizon-mod-api-macros)
+   Compiling fdeflate v0.3.7
+   Compiling semver v1.0.28
+   Compiling typed-path v0.13.0
+   Compiling zip v9.1.3
+   Compiling png v0.18.1
+   Compiling horizon-mod-package v0.1.0 (<workspace>\.build\migration-v3\source\horizon-85b5bcca7c79bb470b90bdb5914b413aa66fe7ae\crates\horizon-mod-package)
+   Compiling iron-furnaces-package-check v0.1.0 (<workspace>\.build\migration-v3\package-check)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 6m 04s
+     Running `.build\migration-v3\api-check\debug\iron-furnaces-package-check.exe "<workspace>\dist\ironfurnaces-0.3.1.hmod"`
+Pinned Horizon package reader accepted the release archive

@@ -6,5 +6,5 @@ __pycache__/
 .horizon/
 # Historical local builds are retained on disk; publish only the migrated package.
 dist/*
-!dist/ironfurnaces-0.3.0.hmod
-!dist/ironfurnaces-0.3.0.hmod.sha256
+!dist/ironfurnaces-0.3.1.hmod
+!dist/ironfurnaces-0.3.1.hmod.sha256

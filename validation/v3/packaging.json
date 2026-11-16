@@ -1,0 +1,8 @@
+{
+  "from_version": "0.3.0",
+  "to_version": "0.3.1",
+  "unchanged_code_asset_license_entries": 574,
+  "notice": "Identical MODIFICATIONS.md bytes moved to NOTICE-MODIFICATIONS.md",
+  "metadata": "Only 0.3.0 -> 0.3.1 version fields changed in Cargo.toml, Cargo.lock and horizon-mod.toml",
+  "package_sha256": "cb55cbedc7fc573f33016b86acc97c00440066a10e2d7ccd4ed33a679426487b"
+}

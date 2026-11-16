@@ -1,0 +1,274 @@
+{
+  "captures": {
+    "status": "recorded",
+    "detail": {
+      "emerald-idle": {
+        "recipe_ticks_elapsed": 0,
+        "timers": {
+          "CookTime": 0,
+          "CookTotal": 40,
+          "BurnTime": 0,
+          "BurnTotal": 0
+        },
+        "slots": [
+          {
+            "count": 1,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "count": 1,
+            "item": "minecraft:coal"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "menu": {
+          "carried": null,
+          "info": null,
+          "level": 0,
+          "name": null,
+          "screen": "inventory",
+          "slots": [
+            {
+              "slot": 300,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 301,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:coal",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            }
+          ],
+          "station": null,
+          "xp_seed": 0
+        },
+        "screenshot": "<workspace>\\.build\\migration-v3\\visual-031\\furnace-idle.png"
+      },
+      "emerald-half": {
+        "recipe_ticks_elapsed": 20,
+        "timers": {
+          "CookTime": 20,
+          "CookTotal": 40,
+          "BurnTime": 301,
+          "BurnTotal": 320
+        },
+        "slots": [
+          {
+            "count": 1,
+            "item": "minecraft:raw_iron"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "menu": {
+          "carried": null,
+          "info": null,
+          "level": 0,
+          "name": null,
+          "screen": "inventory",
+          "slots": [
+            {
+              "slot": 300,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            }
+          ],
+          "station": null,
+          "xp_seed": 0
+        },
+        "screenshot": "<workspace>\\.build\\migration-v3\\visual-031\\furnace-half.png"
+      },
+      "emerald-near-full": {
+        "recipe_ticks_elapsed": 39,
+        "timers": {
+          "CookTime": 39,
+          "CookTotal": 40,
+          "BurnTime": 282,
+          "BurnTotal": 320
+        },
+        "slots": [
+          {
+            "count": 1,
+            "item": "minecraft:raw_iron"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "menu": {
+          "carried": null,
+          "info": null,
+          "level": 0,
+          "name": null,
+          "screen": "inventory",
+          "slots": [
+            {
+              "slot": 300,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            }
+          ],
+          "station": null,
+          "xp_seed": 0
+        },
+        "screenshot": "<workspace>\\.build\\migration-v3\\visual-031\\furnace-near-full.png"
+      },
+      "emerald-complete": {
+        "recipe_ticks_elapsed": 40,
+        "timers": {
+          "CookTime": 0,
+          "CookTotal": 40,
+          "BurnTime": 281,
+          "BurnTotal": 320
+        },
+        "slots": [
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "minecraft:iron_ingot"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "menu": {
+          "carried": null,
+          "info": null,
+          "level": 0,
+          "name": null,
+          "screen": "inventory",
+          "slots": [
+            {
+              "slot": 302,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:iron_ingot",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            }
+          ],
+          "station": null,
+          "xp_seed": 0
+        },
+        "screenshot": "<workspace>\\.build\\migration-v3\\visual-031\\furnace-complete.png"
+      }
+    }
+  },
+  "emerald": {
+    "status": "passed",
+    "detail": {
+      "tier": "emerald",
+      "checkpoints": [
+        "idle",
+        "half",
+        "near-full",
+        "complete"
+      ],
+      "output": "minecraft:iron_ingot",
+      "visual_review": "Inspect the captured PNGs; appearance is not asserted."
+    }
+  }
+}

@@ -1,0 +1,2067 @@
+[
+  {
+    "command": [
+      "wait-ready",
+      60
+    ],
+    "reply": {
+      "block_entities": 3,
+      "border": {
+        "center": [
+          0.0,
+          0.0
+        ],
+        "size": 59999968.0
+      },
+      "carts": [],
+      "chunks": 49,
+      "creative": true,
+      "day_time": 0,
+      "debug": {
+        "advanced_tooltips": false,
+        "chunk_borders": false,
+        "clipboard": null,
+        "hitboxes": false,
+        "overlay": false,
+        "pause_menu": true,
+        "pause_on_lost_focus": true
+      },
+      "destroying": [],
+      "dimension": "minecraft:overworld",
+      "dirty_light": 0,
+      "display": {
+        "height": 1440,
+        "refresh_hz": 180,
+        "scale": 1.0,
+        "width": 1920
+      },
+      "fangs_vertices": 0,
+      "fight": {
+        "alive_crystals": 0,
+        "crystal_list": [],
+        "crystals": 0,
+        "dragon": null,
+        "exit_portal": null,
+        "killed": false,
+        "players": false,
+        "respawn": null
+      },
+      "fishing": null,
+      "fps": 0.2690674066543579,
+      "frames": 40,
+      "generated_chunks": 49,
+      "heard": {},
+      "held": null,
+      "input": {
+        "counts": {
+          "agent": 0,
+          "game": 0,
+          "user": 0
+        },
+        "events": 0,
+        "last_origin": null,
+        "last_user_age_s": null,
+        "recording": null,
+        "replay": null,
+        "user_since_agent": 0
+      },
+      "keys": [],
+      "lightning": {
+        "bolts": 0,
+        "flash": 0,
+        "flashes": 0,
+        "struck": 0
+      },
+      "lod": {
+        "active_tiles": 0,
+        "cached_tiles": 0,
+        "detail_target_columns": 0,
+        "distance": 0,
+        "effective_distance": 0,
+        "far_detail": "full",
+        "kept_mb": 0,
+        "kept_tiles": 0,
+        "levels": [],
+        "pending_observations": 0,
+        "refined_samples": 0,
+        "refined_target_columns": 0,
+        "resident_quads": 0,
+        "sampled_target_tiles": 0,
+        "source": "none",
+        "source_attempted": false,
+        "target_tiles": 0,
+        "terrain_distance": 2
+      },
+      "maps": [],
+      "meshed_sections": 609,
+      "mobs": 0,
+      "music": null,
+      "name_tags": [],
+      "objects": [],
+      "offhand": null,
+      "parallel_tick": {
+        "auto": "watching",
+        "on": false,
+        "setting": "off"
+      },
+      "particles": {},
+      "pending_chunks": 0,
+      "pending_uploads": 0,
+      "physical_keys": [],
+      "pickups": {},
+      "pitch": 0.0,
+      "player": {
+        "food": 20,
+        "health": 20.0,
+        "max_health": null,
+        "on_ground": true,
+        "position": [
+          -7.5,
+          70.0,
+          0.5
+        ],
+        "velocity": [
+          0.0,
+          -0.0784000015258789,
+          0.0
+        ]
+      },
+      "projectiles": [],
+      "render_distance": 2,
+      "renderer": {
+        "arena_bytes": 31457280,
+        "backend": "Vulkan",
+        "culled_sections": [
+          [
+            0,
+            4
+          ],
+          0.0
+        ],
+        "device_type": "discrete",
+        "drawn_sections": 24,
+        "driver": "NVIDIA 621.14",
+        "dynamic_resolution": false,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "gpu_allocated_bytes": 233988352,
+        "gpu_culling": false,
+        "gpu_culling_auto": "watching",
+        "gpu_culling_mode": "off",
+        "gpu_culling_offer": "Offered",
+        "gpu_fading": null,
+        "gpu_frame": false,
+        "gpu_occluding": false,
+        "gpu_reserved_bytes": 315940864,
+        "packed_layout": [
+          true,
+          true
+        ],
+        "present_mode": "Immediate",
+        "resident_sections": 208,
+        "resolution_scale": 100,
+        "section_draw_calls": 2,
+        "section_draws": 47,
+        "section_vertex_bytes": 4591776,
+        "size": [
+          1280,
+          720
+        ],
+        "stats_lag": 0,
+        "uploaded_bytes": 4852416,
+        "vendor": "nvidia",
+        "vertex_bytes_split": [
+          4591776,
+          0
+        ]
+      },
+      "riding": null,
+      "rockets": 0,
+      "screen": "playing",
+      "selected": 1,
+      "server": {
+        "address": "local",
+        "chat": [],
+        "chunks": 49,
+        "dead_players": [],
+        "decode_errors": 0,
+        "dimension": "minecraft:overworld",
+        "entities": {},
+        "entity_id": 1,
+        "food": 20,
+        "game_mode": 1,
+        "health": 20.0,
+        "joined": true,
+        "loaded": true,
+        "lying_players": [],
+        "name": "FurnaceTest",
+        "own_body": false,
+        "player_equipment": [],
+        "player_model": true,
+        "player_positions": [],
+        "players": [
+          "FurnaceTest"
+        ],
+        "status": "Loading terrain...",
+        "text_display_vertices": 0,
+        "text_displays": 0
+      },
+      "sidebar": null,
+      "sounds": {
+        "channels": 0,
+        "decoded": 0,
+        "decoded_mib": 0,
+        "events": [],
+        "handles": 0,
+        "instances": 0,
+        "playing": 0,
+        "queued": 0,
+        "ticking": 0,
+        "used": [
+          0,
+          0
+        ]
+      },
+      "stopped_sounds": {},
+      "streaming": {
+        "decorating": 0,
+        "finishing": 0,
+        "generating": 0,
+        "lighting": 0,
+        "meshing": 0,
+        "protos": 0,
+        "queued": 0
+      },
+      "target": null,
+      "ticks": 19,
+      "tridents": 0,
+      "uptime_seconds": 4.1906566,
+      "using": null,
+      "yaw": 0.0
+    }
+  },
+  {
+    "command": [
+      "state"
+    ],
+    "reply": {
+      "busy": null,
+      "dialog": {
+        "open": null,
+        "screen": null
+      },
+      "dimension": "minecraft:overworld",
+      "gamemode": "creative",
+      "held": null,
+      "input": {
+        "counts": {
+          "agent": 0,
+          "game": 0,
+          "user": 0
+        },
+        "events": 0,
+        "last_origin": null,
+        "last_user_age_s": null,
+        "recording": null,
+        "replay": null,
+        "user_since_agent": 0
+      },
+      "looking_at": {
+        "block": null,
+        "entity": null,
+        "kind": "none"
+      },
+      "menu": null,
+      "mining": null,
+      "paused": false,
+      "player": {
+        "absorption": 0.0,
+        "air": 300,
+        "block_pos": [
+          -8,
+          70,
+          0
+        ],
+        "death_time": null,
+        "effects": [],
+        "eye": [
+          -7.5,
+          71.62000000476837,
+          0.5
+        ],
+        "fall_flying": false,
+        "flying": false,
+        "food": 20,
+        "fov_modifier": 0.9960918426513672,
+        "health": 20.0,
+        "hurt_time": 0,
+        "on_ground": true,
+        "pitch": 0.0,
+        "portal_effect": 0.0,
+        "position": [
+          -7.5,
+          70.0,
+          0.5
+        ],
+        "saturation": 5.0,
+        "shield_cooldown": 0,
+        "shield_cooldown_shown": 0.0,
+        "sneaking": false,
+        "sprinting": false,
+        "velocity": [
+          0.0,
+          -0.0784000015258789,
+          0.0
+        ],
+        "xp": {
+          "level": 0,
+          "progress": 0.0,
+          "total": 0
+        },
+        "yaw": 0.0
+      },
+      "pointer_grabbed": true,
+      "screen": "playing",
+      "selected": 1,
+      "sleeping": null,
+      "swings": 0,
+      "ticks": 19,
+      "time": {
+        "day": 0,
+        "day_time": 0,
+        "time_of_day": 0
+      },
+      "using": null,
+      "weather": {
+        "raining": false,
+        "thundering": false
+      },
+      "world": "IronFurnacesPortSmoke"
+    }
+  },
+  {
+    "command": [
+      "command",
+      "tick freeze"
+    ],
+    "reply": {
+      "chat": [
+        "The game is frozen"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "gamerule spawn_mobs false"
+    ],
+    "reply": {
+      "chat": [
+        "Game rule spawn_mobs is now set to false"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "gamerule random_tick_speed 0"
+    ],
+    "reply": {
+      "chat": [
+        "Game rule random_tick_speed is now set to 0"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "gamemode creative"
+    ],
+    "reply": {
+      "chat": [],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "tp",
+      0.5,
+      200,
+      0.5
+    ],
+    "reply": {
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "wait-ready",
+      60
+    ],
+    "reply": {
+      "block_entities": 3,
+      "border": {
+        "center": [
+          0.0,
+          0.0
+        ],
+        "size": 59999968.0
+      },
+      "carts": [],
+      "chunks": 49,
+      "creative": true,
+      "day_time": 0,
+      "debug": {
+        "advanced_tooltips": false,
+        "chunk_borders": false,
+        "clipboard": null,
+        "hitboxes": false,
+        "overlay": false,
+        "pause_menu": true,
+        "pause_on_lost_focus": true
+      },
+      "destroying": [],
+      "dimension": "minecraft:overworld",
+      "dirty_light": 0,
+      "display": {
+        "height": 1440,
+        "refresh_hz": 180,
+        "scale": 1.0,
+        "width": 1920
+      },
+      "fangs_vertices": 0,
+      "fight": {
+        "alive_crystals": 0,
+        "crystal_list": [],
+        "crystals": 0,
+        "dragon": null,
+        "exit_portal": null,
+        "killed": false,
+        "players": false,
+        "respawn": null
+      },
+      "fishing": null,
+      "fps": 0.2690674066543579,
+      "frames": 66,
+      "generated_chunks": 49,
+      "heard": {},
+      "held": null,
+      "input": {
+        "counts": {
+          "agent": 5,
+          "game": 0,
+          "user": 0
+        },
+        "events": 5,
+        "last_origin": "agent",
+        "last_user_age_s": null,
+        "recording": null,
+        "replay": null,
+        "user_since_agent": 0
+      },
+      "keys": [],
+      "lightning": {
+        "bolts": 0,
+        "flash": 0,
+        "flashes": 0,
+        "struck": 0
+      },
+      "lod": {
+        "active_tiles": 0,
+        "cached_tiles": 0,
+        "detail_target_columns": 0,
+        "distance": 0,
+        "effective_distance": 0,
+        "far_detail": "full",
+        "kept_mb": 0,
+        "kept_tiles": 0,
+        "levels": [],
+        "pending_observations": 0,
+        "refined_samples": 0,
+        "refined_target_columns": 0,
+        "resident_quads": 0,
+        "sampled_target_tiles": 0,
+        "source": "none",
+        "source_attempted": false,
+        "target_tiles": 0,
+        "terrain_distance": 2
+      },
+      "maps": [],
+      "meshed_sections": 609,
+      "mobs": 0,
+      "music": null,
+      "name_tags": [],
+      "objects": [],
+      "offhand": null,
+      "parallel_tick": {
+        "auto": "watching",
+        "on": false,
+        "setting": "off"
+      },
+      "particles": {},
+      "pending_chunks": 0,
+      "pending_uploads": 0,
+      "physical_keys": [],
+      "pickups": {},
+      "pitch": 0.0,
+      "player": {
+        "food": 20,
+        "health": 20.0,
+        "max_health": null,
+        "on_ground": false,
+        "position": [
+          0.5,
+          200.0,
+          0.5
+        ],
+        "velocity": [
+          0.0,
+          -0.0784000015258789,
+          0.0
+        ]
+      },
+      "projectiles": [],
+      "render_distance": 2,
+      "renderer": {
+        "arena_bytes": 31457280,
+        "backend": "Vulkan",
+        "culled_sections": [
+          [
+            0,
+            4
+          ],
+          0.0
+        ],
+        "device_type": "discrete",
+        "drawn_sections": 0,
+        "driver": "NVIDIA 621.14",
+        "dynamic_resolution": false,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "gpu_allocated_bytes": 242376960,
+        "gpu_culling": false,
+        "gpu_culling_auto": "watching",
+        "gpu_culling_mode": "off",
+        "gpu_culling_offer": "Offered",
+        "gpu_fading": null,
+        "gpu_frame": false,
+        "gpu_occluding": false,
+        "gpu_reserved_bytes": 315940864,
+        "packed_layout": [
+          true,
+          true
+        ],
+        "present_mode": "Immediate",
+        "resident_sections": 208,
+        "resolution_scale": 100,
+        "section_draw_calls": 0,
+        "section_draws": 0,
+        "section_vertex_bytes": 4591776,
+        "size": [
+          1280,
+          720
+        ],
+        "stats_lag": 0,
+        "uploaded_bytes": 4852416,
+        "vendor": "nvidia",
+        "vertex_bytes_split": [
+          4591776,
+          0
+        ]
+      },
+      "riding": null,
+      "rockets": 0,
+      "screen": "playing",
+      "selected": 1,
+      "server": {
+        "address": "local",
+        "chat": [
+          "The game is frozen",
+          "Game rule spawn_mobs is now set to false",
+          "Game rule random_tick_speed is now set to 0"
+        ],
+        "chunks": 49,
+        "dead_players": [],
+        "decode_errors": 0,
+        "dimension": "minecraft:overworld",
+        "entities": {},
+        "entity_id": 1,
+        "food": 20,
+        "game_mode": 1,
+        "health": 20.0,
+        "joined": true,
+        "loaded": true,
+        "lying_players": [],
+        "name": "FurnaceTest",
+        "own_body": false,
+        "player_equipment": [],
+        "player_model": true,
+        "player_positions": [],
+        "players": [
+          "FurnaceTest"
+        ],
+        "status": "Loading terrain...",
+        "text_display_vertices": 0,
+        "text_displays": 0
+      },
+      "sidebar": null,
+      "sounds": {
+        "channels": 0,
+        "decoded": 0,
+        "decoded_mib": 0,
+        "events": [],
+        "handles": 0,
+        "instances": 0,
+        "playing": 0,
+        "queued": 0,
+        "ticking": 0,
+        "used": [
+          0,
+          0
+        ]
+      },
+      "stopped_sounds": {},
+      "streaming": {
+        "decorating": 0,
+        "finishing": 0,
+        "generating": 0,
+        "lighting": 0,
+        "meshing": 0,
+        "protos": 0,
+        "queued": 0
+      },
+      "target": null,
+      "ticks": 25,
+      "tridents": 0,
+      "uptime_seconds": 4.4668891,
+      "using": null,
+      "yaw": 0.0
+    }
+  },
+  {
+    "command": [
+      "fill",
+      -5,
+      199,
+      -5,
+      24,
+      199,
+      16,
+      "minecraft:bedrock"
+    ],
+    "reply": {
+      "count": 660,
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "tp",
+      0.5,
+      200,
+      0.5
+    ],
+    "reply": {
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "options-set",
+      "chatVisibility",
+      "2"
+    ],
+    "reply": {
+      "key": "chatVisibility",
+      "ok": true,
+      "option": {
+        "max": 2,
+        "min": 0,
+        "type": "int",
+        "value": 2
+      }
+    }
+  },
+  {
+    "command": [
+      "options-set",
+      "tutorialStep",
+      "none"
+    ],
+    "reply": {
+      "key": "tutorialStep",
+      "ok": true,
+      "option": {
+        "choices": [
+          "movement",
+          "find_tree",
+          "punch_tree",
+          "open_inventory",
+          "craft_planks",
+          "none"
+        ],
+        "type": "enum",
+        "value": "none"
+      }
+    }
+  },
+  {
+    "command": [
+      "options-set",
+      "chatVisibility",
+      "2"
+    ],
+    "reply": {
+      "key": "chatVisibility",
+      "ok": true,
+      "option": {
+        "max": 2,
+        "min": 0,
+        "type": "int",
+        "value": 2
+      }
+    }
+  },
+  {
+    "command": [
+      "setblock",
+      4,
+      200,
+      2,
+      "minecraft:air"
+    ],
+    "reply": {
+      "block": "minecraft:air",
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "setblock",
+      4,
+      200,
+      2,
+      "ironfurnaces:emerald_furnace"
+    ],
+    "reply": {
+      "block": "ironfurnaces:emerald_furnace[facing=north,jovial=0,lit=false,type=0]",
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": []
+    }
+  },
+  {
+    "command": [
+      "command",
+      "time query gametime"
+    ],
+    "reply": {
+      "chat": [
+        "The game time is 0 tick(s)"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "tick sprint 1"
+    ],
+    "reply": {
+      "chat": [
+        "The game is sprinting"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "time query gametime"
+    ],
+    "reply": {
+      "chat": [
+        "The game time is 1 tick(s)"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2,
+      "minecraft:raw_iron",
+      1
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2,
+      "minecraft:coal",
+      1
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:coal"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "close"
+    ],
+    "reply": {
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "tp",
+      4.5,
+      200,
+      0
+    ],
+    "reply": {
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "clear @s"
+    ],
+    "reply": {
+      "chat": [
+        "No items were found on player FurnaceTest"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "select",
+      1
+    ],
+    "reply": {
+      "held": null,
+      "ok": true,
+      "selected": 1
+    }
+  },
+  {
+    "command": [
+      "interact",
+      4,
+      200,
+      2,
+      "north"
+    ],
+    "reply": {
+      "block": {
+        "block": "ironfurnaces:emerald_furnace",
+        "loaded": true,
+        "pos": [
+          4,
+          200,
+          2
+        ],
+        "state": "ironfurnaces:emerald_furnace[facing=north,jovial=0,lit=false,type=0]"
+      },
+      "block_before": "ironfurnaces:emerald_furnace[facing=north,jovial=0,lit=false,type=0]",
+      "changed": false,
+      "inventory_change": {},
+      "ok": true,
+      "screen": "container"
+    }
+  },
+  {
+    "command": [
+      "wait",
+      4
+    ],
+    "reply": {
+      "ok": true,
+      "ticks": 47
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 CookTime"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 0"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 CookTotal"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 40"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 BurnTime"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 0"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 BurnTotal"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 0"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:coal"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:coal"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:coal"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "menu"
+    ],
+    "reply": {
+      "carried": null,
+      "info": null,
+      "level": 0,
+      "name": null,
+      "screen": "inventory",
+      "slots": [
+        {
+          "slot": 300,
+          "stack": {
+            "count": 1,
+            "custom_name": null,
+            "damage": 0,
+            "enchantments": [],
+            "item": "minecraft:raw_iron",
+            "potion": null,
+            "repair_cost": 0,
+            "stored_enchantments": [],
+            "trim": null
+          }
+        },
+        {
+          "slot": 301,
+          "stack": {
+            "count": 1,
+            "custom_name": null,
+            "damage": 0,
+            "enchantments": [],
+            "item": "minecraft:coal",
+            "potion": null,
+            "repair_cost": 0,
+            "stored_enchantments": [],
+            "trim": null
+          }
+        }
+      ],
+      "station": null,
+      "xp_seed": 0
+    }
+  },
+  {
+    "command": [
+      "screenshot",
+      "<workspace>\\.build\\migration-v3\\visual-031\\furnace-idle.png"
+    ],
+    "reply": {
+      "height": 720,
+      "ok": true,
+      "width": 1280
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:coal"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "command",
+      "time query gametime"
+    ],
+    "reply": {
+      "chat": [
+        "The game time is 1 tick(s)"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "tick sprint 20"
+    ],
+    "reply": {
+      "chat": [
+        "The game is sprinting"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "time query gametime"
+    ],
+    "reply": {
+      "chat": [
+        "The game time is 6 tick(s)"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "time query gametime"
+    ],
+    "reply": {
+      "chat": [
+        "The game time is 21 tick(s)"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "wait",
+      4
+    ],
+    "reply": {
+      "ok": true,
+      "ticks": 66
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 CookTime"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 20"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 CookTotal"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 40"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 BurnTime"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 301"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 BurnTotal"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 320"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "menu"
+    ],
+    "reply": {
+      "carried": null,
+      "info": null,
+      "level": 0,
+      "name": null,
+      "screen": "inventory",
+      "slots": [
+        {
+          "slot": 300,
+          "stack": {
+            "count": 1,
+            "custom_name": null,
+            "damage": 0,
+            "enchantments": [],
+            "item": "minecraft:raw_iron",
+            "potion": null,
+            "repair_cost": 0,
+            "stored_enchantments": [],
+            "trim": null
+          }
+        }
+      ],
+      "station": null,
+      "xp_seed": 0
+    }
+  },
+  {
+    "command": [
+      "screenshot",
+      "<workspace>\\.build\\migration-v3\\visual-031\\furnace-half.png"
+    ],
+    "reply": {
+      "height": 720,
+      "ok": true,
+      "width": 1280
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "command",
+      "time query gametime"
+    ],
+    "reply": {
+      "chat": [
+        "The game time is 21 tick(s)"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "tick sprint 19"
+    ],
+    "reply": {
+      "chat": [
+        "The game is sprinting"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "time query gametime"
+    ],
+    "reply": {
+      "chat": [
+        "The game time is 40 tick(s)"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "wait",
+      4
+    ],
+    "reply": {
+      "ok": true,
+      "ticks": 84
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 CookTime"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 39"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 CookTotal"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 40"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 BurnTime"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 282"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 BurnTotal"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 320"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "menu"
+    ],
+    "reply": {
+      "carried": null,
+      "info": null,
+      "level": 0,
+      "name": null,
+      "screen": "inventory",
+      "slots": [
+        {
+          "slot": 300,
+          "stack": {
+            "count": 1,
+            "custom_name": null,
+            "damage": 0,
+            "enchantments": [],
+            "item": "minecraft:raw_iron",
+            "potion": null,
+            "repair_cost": 0,
+            "stored_enchantments": [],
+            "trim": null
+          }
+        }
+      ],
+      "station": null,
+      "xp_seed": 0
+    }
+  },
+  {
+    "command": [
+      "screenshot",
+      "<workspace>\\.build\\migration-v3\\visual-031\\furnace-near-full.png"
+    ],
+    "reply": {
+      "height": 720,
+      "ok": true,
+      "width": 1280
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        {
+          "count": 1,
+          "item": "minecraft:raw_iron"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "command",
+      "time query gametime"
+    ],
+    "reply": {
+      "chat": [
+        "The game time is 40 tick(s)"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "tick sprint 1"
+    ],
+    "reply": {
+      "chat": [
+        "The game is sprinting"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "time query gametime"
+    ],
+    "reply": {
+      "chat": [
+        "The game time is 41 tick(s)"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "wait",
+      4
+    ],
+    "reply": {
+      "ok": true,
+      "ticks": 102
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 CookTime"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 0"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 CookTotal"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 40"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 BurnTime"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 281"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "command",
+      "data get block 4 200 2 BurnTotal"
+    ],
+    "reply": {
+      "chat": [
+        "4, 200, 2 has the following block data: 320"
+      ],
+      "ok": true
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        null,
+        null,
+        {
+          "count": 1,
+          "item": "minecraft:iron_ingot"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        null,
+        null,
+        {
+          "count": 1,
+          "item": "minecraft:iron_ingot"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        null,
+        null,
+        {
+          "count": 1,
+          "item": "minecraft:iron_ingot"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "menu"
+    ],
+    "reply": {
+      "carried": null,
+      "info": null,
+      "level": 0,
+      "name": null,
+      "screen": "inventory",
+      "slots": [
+        {
+          "slot": 302,
+          "stack": {
+            "count": 1,
+            "custom_name": null,
+            "damage": 0,
+            "enchantments": [],
+            "item": "minecraft:iron_ingot",
+            "potion": null,
+            "repair_cost": 0,
+            "stored_enchantments": [],
+            "trim": null
+          }
+        }
+      ],
+      "station": null,
+      "xp_seed": 0
+    }
+  },
+  {
+    "command": [
+      "screenshot",
+      "<workspace>\\.build\\migration-v3\\visual-031\\furnace-complete.png"
+    ],
+    "reply": {
+      "height": 720,
+      "ok": true,
+      "width": 1280
+    }
+  },
+  {
+    "command": [
+      "container",
+      4,
+      200,
+      2
+    ],
+    "reply": {
+      "slots": [
+        null,
+        null,
+        {
+          "count": 1,
+          "item": "minecraft:iron_ingot"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "command": [
+      "quit"
+    ],
+    "reply": {
+      "ok": true
+    }
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "menu": {
+    "status": "passed",
+    "detail": {
+      "result_slot_insertion": "rejected",
+      "invalid_fuel": "rejected",
+      "component_max_stack_size": {
+        "input": 1,
+        "player": 1
+      },
+      "shift_extraction": 8,
+      "recipe_xp": {
+        "before": 0,
+        "after": 6
+      }
+    }
+  },
+  "persistence": {
+    "status": "passed",
+    "detail": {
+      "saved": {
+        "slots": [
+          {
+            "count": 9,
+            "item": "minecraft:raw_iron"
+          },
+          null,
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_fuel"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "burn": 3181,
+        "progress": 20
+      },
+      "reloaded": {
+        "slots": [
+          {
+            "count": 9,
+            "item": "minecraft:raw_iron"
+          },
+          null,
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_fuel"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "burn": 3181,
+        "progress": 20
+      },
+      "continued_cooking": "passed"
+    }
+  }
+}

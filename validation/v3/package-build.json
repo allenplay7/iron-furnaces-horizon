@@ -1,0 +1,54 @@
+{
+  "base": "developer-85b5bcca-ironfurnaces-test",
+  "horizon": "85b5bcca7c79bb470b90bdb5914b413aa66fe7ae",
+  "horizon_mixins": "e59da9094f0c2fdda6c627fe9eff22dec6a906f0",
+  "rust": "1.99.1",
+  "profile": "optimized",
+  "route": "prebuilt",
+  "left_out": [],
+  "target": "client",
+  "rust_target": "x86_64-pc-windows-gnu",
+  "secs": 94,
+  "mods": [
+    {
+      "id": "ironfurnaces",
+      "version": "0.3.1",
+      "sha256": "e267c6caa2735a30f8955b1974bfa9b9ef0e5b5b55f3731f755a7add4032795a",
+      "internals": []
+    }
+  ],
+  "libraries": [
+    {
+      "file": "iron_furnaces_horizon.dll",
+      "sha256": "e7778173a199ccf6954b6ea4f87e824567f2bf6f750c838800314e1d5dc4092c",
+      "kind": "mod",
+      "mod": "ironfurnaces",
+      "identity": "85b5bcca7c79bb470b90bdb5914b413aa66fe7ae ironfurnaces 0.3.1 1.99.1"
+    },
+    {
+      "file": "horizon_patch.dll",
+      "sha256": "fc03281934624349178e6fdb168c5a00f2ff55a7ad42e5764cb4b90a094f3edc",
+      "kind": "patch",
+      "mod": "horizon_patch",
+      "identity": "85b5bcca7c79bb470b90bdb5914b413aa66fe7ae horizon_patch 0 1.99.1"
+    }
+  ],
+  "package_sha256": "cb55cbedc7fc573f33016b86acc97c00440066a10e2d7ccd4ed33a679426487b",
+  "runtime_sha256": {
+    "dxcompiler.dll": "0689e2fee0a1c9df8662a59680469f24e2a3ad7ce6bbbcc9284f7a83172bfc59",
+    "horizon-client.exe": "5699037a47c9d93fd9e65dc1fa0da7977230756acc49953d70ff9c14de90e9f3",
+    "horizon_core.dll": "1a1b1cf7adf3e5e2ec3f9f04cd071d4712cf32f95d106f679b0274cc95636236",
+    "horizon_engine_slots.dll": "2db13fce03bf0f7b82968f4552e9411220491c9fce1eba6c7d32166fb8a14e92",
+    "horizon_mod_host.dll": "f724ac342ae69fa35ddd0682bf918be412ba43eea0371337c22b58234dbdceb8",
+    "horizon_mod_runtime.dll": "eea91a654a59ff8b14ba58af1e9ba74d7b09fde43604108cb024c0deec836db3",
+    "horizon_mod_wasm.dll": "7248d02c9a03da6f4707d1da9bb7d6cc7566e496008d2903715fd04536a2cef1",
+    "horizon_patch.dll": "fc03281934624349178e6fdb168c5a00f2ff55a7ad42e5764cb4b90a094f3edc",
+    "iron_furnaces_horizon.dll": "e7778173a199ccf6954b6ea4f87e824567f2bf6f750c838800314e1d5dc4092c",
+    "libgcc_s_seh-1.dll": "368488a9089e3d89b32a3609816fa40dd02fa4cdf480a2bc86e19c7bebdc8bda",
+    "libwinpthread-1.dll": "1b801c9280f6cad8cb2a026bfa48be8c4bea07a0dc78a820d1591f900ee76f0b",
+    "mod_api.dll": "27e87da473cdb812cdd847cd6eee9cad5aa5cdc4dcbc66b9832b1cdecee48202",
+    "mod_points.dll": "36b43d80ed4d22e178c648c185617599a9a8d0a480ca70aa0818f4b98934eaf7",
+    "mod_vocab.dll": "ba6aa9c5b97974877a29de441c956c1b20dee7ae976deb8f39d2c9d22c7c3d71",
+    "std-f903e3d16df36da5.dll": "d0ad56bc27113cc091fa75f4a73824c9a5d92f64adb0083c8eb1e21c60c33324"
+  }
+}

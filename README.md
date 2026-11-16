@@ -2,9 +2,9 @@
 
 An unofficial Rust port of [Astryxion's Iron Furnaces](https://github.com/astryxion/Iron-Furnaces), with the original textures, models and crafting progression. Original credits: **Astryxion, pizzatime and XenoMustache**. Distributed under **Apache-2.0**; see [LICENSE](LICENSE), [NOTICE](NOTICE) and [modification notices](MODIFICATIONS.md).
 
-Version **0.3.0** targets Horizon's new native mod API at commit `85b5bcca7c79bb470b90bdb5914b413aa66fe7ae` (Minecraft 26.3). It uses typed block/item/menu parts, transactional storage capabilities and chunk tickets, packaged together with its content in **one `.hmod`**. The game is supplied separately by Horizon.
+Version **0.3.1** targets Horizon's new native mod API at commit `85b5bcca7c79bb470b90bdb5914b413aa66fe7ae` (Minecraft 26.3). It uses typed block/item/menu parts, transactional storage capabilities and chunk tickets, packaged together with its content in **one `.hmod`**. The game is supplied separately by Horizon.
 
-**Compatibility:** the older November 13 Nightly and its launcher cannot build this package. Use a Horizon build and SDK matching the pinned new API revision. Download the [0.3.0 prerelease](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.3.0). The previous paired-package release remains documented in [LEGACY-0.2.md](LEGACY-0.2.md). See [0.3 validation](VALIDATION-0.3.md) for actual-game checks and a saved-world migration from 0.2.
+**Compatibility:** the older November 13 Nightly and its launcher cannot build this package. Use a Horizon build and SDK matching the pinned new API revision. Download the [0.3.1 prerelease](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.3.1). The previous paired-package release remains documented in [LEGACY-0.2.md](LEGACY-0.2.md). See [0.3 validation](VALIDATION-0.3.md) for actual-game checks and a saved-world migration from 0.2.
 
 The port includes thirteen furnace tiers, electric factories, three generator fuel modes, wireless heating, per-side automation, redstone controls, settings copying, seasonal skins and Rainbow Coal.
 
@@ -15,7 +15,7 @@ The speed augment halves cooking time and uses twice as much fuel per operation.
 ## Install
 
 1. Use a separate Horizon instance running the matching new API build. Back up any world you intend to migrate.
-2. Install `ironfurnaces-0.3.0.hmod` through that launcher's Mods page, or place it in the instance's `horizon-mods` folder. Remove/disable the older Iron Furnaces content/native pair in this test instance to avoid duplicate IDs.
+2. Install `ironfurnaces-0.3.1.hmod` through that launcher's Mods page, or place it in the instance's `horizon-mods` folder. Remove/disable the older Iron Furnaces content/native pair in this test instance to avoid duplicate IDs.
 3. Enable Iron Furnaces, allow its native code and build the instance's mods, then launch it.
 4. Test a disposable world first. Craft a furnace or use `/give @s ironfurnaces:iron_furnace` in creative mode.
 

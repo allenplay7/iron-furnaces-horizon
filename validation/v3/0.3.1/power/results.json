@@ -1,0 +1,56 @@
+{
+  "factory_lanes": {
+    "status": "passed",
+    "detail": {
+      "iron": {
+        "lanes": 2,
+        "ticks": 160,
+        "energy_per_lane": 4000
+      },
+      "gold": {
+        "lanes": 4,
+        "ticks": 120,
+        "energy_per_lane": 4000
+      },
+      "diamond": {
+        "lanes": 6,
+        "ticks": 80,
+        "energy_per_lane": 4000
+      },
+      "speed": {
+        "ticks": 80,
+        "energy": 8000
+      },
+      "fuel": {
+        "ticks": 200,
+        "energy": 2000
+      }
+    }
+  },
+  "generator_economics": {
+    "status": "passed",
+    "detail": {
+      "normal": {
+        "energy": 32000,
+        "rate": 40
+      },
+      "speed": {
+        "energy": 16000,
+        "rate": 80
+      },
+      "fuel": {
+        "energy": 64000,
+        "rate": 30
+      },
+      "capacity_pause": "conserved exactly"
+    }
+  },
+  "wireless": {
+    "status": "passed",
+    "detail": {
+      "binding": "heater coordinates",
+      "cost": 2000,
+      "receiver": "retained"
+    }
+  }
+}
