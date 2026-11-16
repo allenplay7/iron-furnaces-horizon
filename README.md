@@ -6,6 +6,17 @@ Version **0.3.1** targets Horizon's new native mod API at commit `85b5bcca7c79bb
 
 **Compatibility:** the older November 13 Nightly and its launcher cannot build this package. Use a Horizon build and SDK matching the pinned new API revision. Download the [0.3.1 prerelease](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.3.1). The previous paired-package release remains documented in [LEGACY-0.2.md](LEGACY-0.2.md). See [0.3 validation](VALIDATION-0.3.md) for actual-game checks and a saved-world migration from 0.2.
 
+## Choose your version
+
+Both versions include the upgraded furnaces, electric factories, generators and wireless heating. Choose the version that matches your Horizon installation:
+
+| Mod version | Required Horizon version | Required mod files | Documentation and availability |
+| --- | --- | --- | --- |
+| **0.2.0 — older modding API** | Nightly **2026-11-13**, commit `9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0` | **Both** `ironfurnaces-0.2.0.hmod` and `ironfurnaces-0.2.0.hnmod` | [Legacy instructions](LEGACY-0.2.md) and [validation](VALIDATION.md). Local packages are retained; a separate GitHub release is planned. |
+| **0.3.1 — new modding API** | Commit `85b5bcca7c79bb470b90bdb5914b413aa66fe7ae` and its matching SDK | `ironfurnaces-0.3.1.hmod` only | [Published prerelease](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.3.1) and [validation](VALIDATION-0.3.md). |
+
+These packages are not interchangeable. Use one version per instance; do not enable the 0.2 pair alongside 0.3.1. The older version meant here is **0.2.0**, not the withdrawn 0.3.0 prerelease. Both versions retain the original Apache-2.0 license and credits.
+
 The port includes thirteen furnace tiers, electric factories, three generator fuel modes, wireless heating, per-side automation, redstone controls, settings copying, seasonal skins and Rainbow Coal.
 
 Use a matching upgrade item on a placed furnace to change its tier while keeping its inventory, energy and settings. Ordinary use opens its machine screen. The **+** button opens the augment page: red selects smoking or blasting, green selects speed or fuel efficiency, and blue selects an electric factory or a generator. Remove an augment from its slot to remove its effect. An empty blue slot selects the ordinary fuel furnace. Augments can also be installed by using their item on the block.
@@ -13,6 +24,16 @@ Use a matching upgrade item on a placed furnace to change its tier while keeping
 The speed augment halves cooking time and uses twice as much fuel per operation. The fuel-efficiency augment increases cooking time by 25% and doubles operations per fuel item. Timings round to whole ticks. Changing augments clears current burning and cooking progress. Changing the machine mode drops incompatible stored ingredients and results beside the furnace; changing a generator's fuel mode also clears its fuel inventory. Collect those items before leaving.
 
 ## Install
+
+### Older API: 0.2.0
+
+1. Use a separate instance running the pinned November 13 Nightly.
+2. Install `ironfurnaces-0.2.0.hmod` in `horizon-mods` and `ironfurnaces-0.2.0.hnmod` in `horizon-native-mods`.
+3. Enable the content mod and **Iron Furnaces Native**, build the native mods, then launch. Both files are required.
+
+See [LEGACY-0.2.md](LEGACY-0.2.md) for the complete older-version instructions.
+
+### New API: 0.3.1
 
 1. Use a separate Horizon instance running the matching new API build. Back up any world you intend to migrate.
 2. Install `ironfurnaces-0.3.1.hmod` through that launcher's Mods page, or place it in the instance's `horizon-mods` folder. Remove/disable the older Iron Furnaces content/native pair in this test instance to avoid duplicate IDs.
@@ -106,6 +127,7 @@ Development references: [mod guide at the pinned revision](https://github.com/ho
 Status as of **16 November 2026**: migration, testing and publication are complete. The current release is [v0.3.1](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.3.1), from commit `3075b4950f80c2c7f0906b609ea06220213ed3ed`. Its [GitHub checks passed](https://github.com/allenplay7/iron-furnaces-horizon/actions/runs/43813877850), including the real Horizon package reader and cross-platform archive reproducibility. The package was then installed from that exact GitHub release into a disposable instance; Horizon selected the already-tested native build without recompilation. See [installation evidence](validation/v3/0.3.1/github-install.log).
 
 - Start with `native-v3/`, `tools/package_v3.py`, `tools/check_v3.py`, `tools/check_package.py` and [the validation report](VALIDATION-0.3.md). `native/` is the historical 0.2 implementation.
+- Planned follow-up: publish **0.2.0 separately alongside 0.3.1**. Its retained local artifacts are `dist/ironfurnaces-0.2.0.hmod`, `dist/ironfurnaces-0.2.0.hnmod` and `dist/SHA256SUMS`; the legacy source and packaging helper are `native/` and `tools/build.py`. Regenerate the legacy packages with the current license/credit notices before publishing and verify the resulting archives/checksums. These older artifacts are currently excluded by `.gitignore` and have not been uploaded as a release. Preserve the two-file installation instructions and the old Horizon pin when publishing them.
 - Keep the Horizon and mixin revisions pinned in `native-v3/horizon-mod.toml`. The build uses Rust 1.99.1. The newer API is incompatible with the November 13 Nightly; the existing working 0.2 installation and personal worlds were left intact.
 - Full validation passed: 28 Rust tests, 14 content tests, 16 power scenarios, 11 furnace scenarios, four extra scenarios, seven GUI groups and a real 0.2 saved-world migration. The 0.3.1 packaging fix has identical Rust sources/assets, and its rebuilt version additionally passed six gameplay/screen checks. Exact receipts and sanitized evidence are under `validation/v3/`.
 - Fixes to retain: do not register the machine block part twice; register the generator recipe type/serializer; edit the copier's actual inventory slot to avoid creative duplication; handle sneak-use in the first-use item hook; migrate old bare recipe IDs so saved paid work and XP survive; preserve the clean progress-arrow rendering.

@@ -1,4 +1,4 @@
-This is historical documentation for the local 0.2 port. The current release is documented in [README.md](README.md). Old package paths and build hashes below describe archived local tests; those old packages are not published with 0.3.
+This documents **0.2.0 for Horizon's older modding API**, retained for a separate GitHub release alongside 0.3.1. See [README.md](README.md#choose-your-version) to choose the matching version. Package paths and build hashes below describe archived local tests; the 0.2 packages are not yet uploaded as their own GitHub release.
 
 # Iron Furnaces for Horizon
 
