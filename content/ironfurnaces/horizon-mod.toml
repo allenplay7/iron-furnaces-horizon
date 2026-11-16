@@ -1,8 +1,8 @@
 id = "ironfurnaces"
 name = "Iron Furnaces"
-version = "0.2.0"
+version = "0.3.1"
 description = "Upgraded furnaces, electric factories, generators, wireless heating, upgrades and augments. Requires the Iron Furnaces native companion."
-authors = ["Astryxion", "pizzatime", "XenoMustache", "Horizon port contributors"]
+authors = ["allenplay7"]
 api = "0.2"
 side = "both"
 capabilities = ["registries"]

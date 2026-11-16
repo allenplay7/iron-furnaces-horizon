@@ -9,7 +9,7 @@ Use the version that matches your Horizon installation. Do not install both vers
 | Version | Horizon requirement | Files | Download |
 | --- | --- | --- | --- |
 | **0.2.0 — legacy API** | Nightly 2026-11-13, commit `9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0` | `.hmod` + `.hnmod` | [GitHub release](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.2.0) |
-| **0.3.1 — new API** | Horizon commit `85b5bcca7c79bb470b90bdb5914b413aa66fe7ae` and matching SDK | One `.hmod` | [GitHub prerelease](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.3.1) |
+| **0.3.1 — registry-compatible** | Nightly 2026-11-13, commit `9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0` | `.hmod` + `.hnmod` | [GitHub release](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.3.1) |
 
 ## Install
 
@@ -22,11 +22,12 @@ Use the version that matches your Horizon installation. Do not install both vers
 
 See [legacy instructions](LEGACY-0.2.md) for details.
 
-### 0.3.1 new API
+### 0.3.1 registry-compatible
 
-1. Create a separate instance using the required new API build and matching SDK.
-2. Install `ironfurnaces-0.3.1.hmod` through the launcher's Mods page or `horizon-mods` folder.
-3. Enable Iron Furnaces, allow its native code, build the instance's mods, and test a disposable world first.
+1. Create a separate instance using the required November 13 Nightly.
+2. Put `ironfurnaces-0.3.1.hmod` in `horizon-mods`.
+3. Put `ironfurnaces-0.3.1.hnmod` in `horizon-native-mods`.
+4. Enable both parts, build the native mods, and test a disposable world first.
 
 Back up worlds before migrating. Remove or disable the 0.2.0 pair in a 0.3.1 instance.
 
