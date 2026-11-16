@@ -1,0 +1,11 @@
+Installed from the published v0.3.1 release into the disposable development instance.
+
+allenplay7/iron-furnaces-horizon @ v0.3.1
+Source, to read: https://github.com/allenplay7/iron-furnaces-horizon/tree/3075b4950f80c2c7f0906b609ea06220213ed3ed
+Not reviewed by the Horizon registry. Native mods run with full access to this computer. Read the source first.
+Installed ironfurnaces 0.3.1 from GitHub (allenplay7/iron-furnaces-horizon @ v0.3.1), sha256 cb55cbedc7fc573f33016b86acc97c00440066a10e2d7ccd4ed33a679426487b.
+Build it next: horizon-launcher native-build --trust-native-code
+
+Build from the installed package:
+Up to date (no build needed) (optimized)
+native-85b5bcc-a5c3111f5d90 built and selected for its instance.
