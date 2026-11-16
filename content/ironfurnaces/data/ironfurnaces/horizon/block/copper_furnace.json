@@ -1,0 +1,39 @@
+{
+  "template": "minecraft:furnace",
+  "properties": {
+    "hardness": 3.0,
+    "explosion_resistance": 6.0,
+    "requires_tool": true,
+    "sounds": "minecraft:copper_block"
+  },
+  "state_properties": {
+    "type": {
+      "type": "enum",
+      "values": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "jovial": {
+      "type": "enum",
+      "values": [
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "default_state": {
+    "type": "0",
+    "jovial": "0"
+  },
+  "state_light": {
+    "property": "lit",
+    "values": {
+      "true": 14,
+      "false": 0
+    },
+    "default": 0
+  }
+}

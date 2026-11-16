@@ -1,0 +1,20 @@
+Iron Furnaces for Horizon
+
+Adapted from Iron Furnaces by Astryxion.
+Original source copyright 2026 Astryxion.
+Original credits: Astryxion, pizzatime, XenoMustache.
+https://github.com/astryxion/Iron-Furnaces
+Upstream revision: e1fabfe21abf5b11de1efb2b2f773d5561539d4c
+Source variant: Fabric 26.3.
+
+This distribution contains modified resource definitions and a Rust
+reimplementation for Horizon. It is an unofficial port and is not endorsed
+by the original authors. Original textures and models retain their original
+attribution. Original work and these adaptations are distributed under the
+Apache License, Version 2.0; see LICENSE.
+
+Horizon is a separate project. The original pinned 0.2 build used its MIT
+release; the new API revision uses LGPL-3.0-or-later. Horizon's own license
+and notices apply to any separately distributed Horizon code or binaries:
+https://github.com/horizon-rust/horizon
+No Minecraft game files or prepared resources are redistributed.

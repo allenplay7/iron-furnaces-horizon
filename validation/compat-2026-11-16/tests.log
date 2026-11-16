@@ -1,0 +1,44 @@
++ <user-home>\AppData\Roaming\horizon-launcher\rust\1.99.1-x86_64-pc-windows-gnu\bin\cargo.EXE test --locked --offline
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.06s
+     Running unittests native\rules_lib.rs (.build\rules-target\debug\deps\iron_furnaces_horizon_rules-f2ed81c0b44361c4.exe)
+
+running 24 tests
+test iron_furnaces_energy_rules::tests::augment_channels_and_energy_direction_are_independent ... ok
+test iron_furnaces_energy_rules::tests::factory_partial_debits_and_last_tick_charge_exact_recipe_cost ... ok
+test iron_furnaces_energy_rules::tests::rainbow_requires_each_distinct_active_tier_and_single_owned_generator ... ok
+test iron_furnaces_energy_rules::tests::factory_stalls_if_restored_progress_has_no_energy ... ok
+test iron_furnaces_rules::tests::bulk_furnaces_respect_input_and_output_capacity ... ok
+test iron_furnaces_energy_rules::tests::generator_modes_preserve_source_rounding_and_food_energy ... ok
+test iron_furnaces_energy_rules::tests::rainbow_coal_is_consumed_after_exactly_5120_uses ... ok
+test iron_furnaces_energy_rules::tests::capacities_and_active_lanes_match_upstream_tiers ... ok
+test iron_furnaces_energy_rules::tests::transfer_only_debits_energy_the_destination_accepts ... ok
+test iron_furnaces_energy_rules::tests::wireless_ignition_obeys_cost_and_the_speed_prerequisite ... ok
+test iron_furnaces_energy_rules::tests::coal_yield_depends_on_augment_not_generator_tier ... ok
+test iron_furnaces_rules::tests::augment_channels_and_roundtrips ... ok
+test iron_furnaces_energy_rules::tests::full_or_small_buffers_cannot_destroy_or_create_fuel_energy ... ok
+test iron_furnaces_rules::tests::coal_economics_follow_augment_not_tier_speed ... ok
+test iron_furnaces_rules::tests::extreme_data_cannot_overflow_signed_timers ... ok
+test iron_furnaces_rules::tests::recipe_times_and_rounding_match_upstream ... ok
+test iron_furnaces_rules::tests::tiers_preserve_default_timing_and_identity ... ok
+test iron_furnaces_rules::tests::upgrades_require_exact_original_routes ... ok
+test iron_furnaces_energy_rules::tests::six_factory_lanes_cannot_reserve_the_same_scarce_energy ... ok
+test iron_furnaces_rules::tests::zero_and_short_fuel_do_not_become_free_fuel ... ok
+test iron_furnaces_slot_rules::tests::augment_channels_results_and_linker_limits_are_enforced_without_context ... ok
+test iron_furnaces_slot_rules::tests::generator_and_ordinary_fuel_slots_cannot_be_confused ... ok
+test iron_furnaces_slot_rules::tests::only_active_factory_inputs_accept_the_current_recipe ... ok
+test iron_furnaces_slot_rules::tests::authoritative_rules_do_not_leak_into_client_prediction ... ok
+
+test result: ok. 24 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests iron_furnaces_horizon_rules
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ C:\Python314\python.exe -m unittest discover -s tools -p test_*.py
+..............
+----------------------------------------------------------------------
+Ran 14 tests in 2.221s
+
+OK

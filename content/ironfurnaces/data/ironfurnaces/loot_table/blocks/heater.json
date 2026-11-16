@@ -1,0 +1,25 @@
+{
+  "_comment": "Modified for the unofficial Iron Furnaces Horizon port (2026): adapted heater drops for Horizon. Original copyright 2026 Astryxion; Apache-2.0; see LICENSE and NOTICE.",
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ironfurnaces:heater",
+          "modifier": {
+            "type": "minecraft:copy_components",
+            "source": "block_entity",
+            "include": [
+              "minecraft:custom_name"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

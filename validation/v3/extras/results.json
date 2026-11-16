@@ -1,0 +1,35 @@
+{
+  "heater_drop_place": {
+    "status": "passed",
+    "detail": {
+      "energy": 543210,
+      "heater_drops": 1,
+      "receiver_drops": 1,
+      "placement": "restored energy"
+    }
+  },
+  "rainbow_explosion": {
+    "status": "passed",
+    "detail": {
+      "explosive": "minecraft:tnt",
+      "rainbow_coal": 1,
+      "original_inventory": "destroyed"
+    }
+  },
+  "furnace_self_drop": {
+    "status": "passed",
+    "detail": {
+      "iron_furnace": 1,
+      "raw_iron_contents": 2,
+      "survival_tool": "netherite_pickaxe"
+    }
+  },
+  "configuration": {
+    "status": "passed",
+    "detail": {
+      "live_reload_ticks": 80,
+      "invalid_json": "last valid settings retained",
+      "world_override_ticks": 60
+    }
+  }
+}

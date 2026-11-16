@@ -1,0 +1,188 @@
+{
+  "migration": {
+    "status": "passed",
+    "detail": {
+      "version": 2,
+      "slots": 19,
+      "legacy_augments_and_routes": "preserved"
+    }
+  },
+  "vanilla_upgrade": {
+    "status": "passed",
+    "detail": {
+      "vanilla": {
+        "BurnTime": 1544,
+        "BurnTotal": 1600,
+        "CookTime": 57,
+        "CookTotal": 200
+      },
+      "converted": {
+        "BurnTime": 1235,
+        "BurnTotal": 1280,
+        "CookTime": 45
+      },
+      "inventory": "preserved",
+      "first_tick": "continued partial recipe",
+      "name_and_lock": "preserved"
+    }
+  },
+  "factory_lanes": {
+    "status": "passed",
+    "detail": {
+      "iron": {
+        "lanes": 2,
+        "ticks": 160,
+        "energy_per_lane": 4000
+      },
+      "gold": {
+        "lanes": 4,
+        "ticks": 120,
+        "energy_per_lane": 4000
+      },
+      "diamond": {
+        "lanes": 6,
+        "ticks": 80,
+        "energy_per_lane": 4000
+      },
+      "speed": {
+        "ticks": 80,
+        "energy": 8000
+      },
+      "fuel": {
+        "ticks": 200,
+        "energy": 2000
+      }
+    }
+  },
+  "factory_safety": {
+    "status": "passed",
+    "detail": {
+      "auto_split": "balanced without merging components",
+      "blocked_output": "input and energy retained"
+    }
+  },
+  "generator_economics": {
+    "status": "passed",
+    "detail": {
+      "normal": {
+        "energy": 32000,
+        "rate": 40
+      },
+      "speed": {
+        "energy": 16000,
+        "rate": 80
+      },
+      "fuel": {
+        "energy": 64000,
+        "rate": 30
+      },
+      "capacity_pause": "conserved exactly"
+    }
+  },
+  "power_reload": {
+    "status": "passed",
+    "detail": {
+      "saved": {
+        "(4, 200, 2)": {
+          "energy": 2280,
+          "GeneratorTotal": 32000,
+          "GeneratorRemaining": 29720
+        },
+        "(10, 200, 2)": {
+          "energy": 6575,
+          "LaneProgress2": 57,
+          "LaneTotal2": 160,
+          "LaneCost2": 4000,
+          "LaneReserved2": 2575
+        }
+      },
+      "restart": "exact budgets and progress retained",
+      "continued": "factory and generator"
+    }
+  },
+  "special_fuels": {
+    "status": "passed",
+    "detail": {
+      "smoking": 48000,
+      "blasting": 10000,
+      "rainbow_coal_final_use": 4000
+    }
+  },
+  "energy_link": {
+    "status": "passed",
+    "detail": {
+      "generated": 32000,
+      "two_operations": 8000,
+      "remaining": 24000
+    }
+  },
+  "automation": {
+    "status": "failed",
+    "error": "Auto-output retained spent water bucket"
+  },
+  "hopper_routes": {
+    "status": "passed",
+    "detail": {
+      "fuel_faces": "bucket-only extraction",
+      "factory_outputs": "active lanes only"
+    }
+  },
+  "redstone": {
+    "status": "passed",
+    "detail": {
+      "requires_power": "passed",
+      "requires_no_power": "passed",
+      "comparator": 15,
+      "subtracted": 12
+    }
+  },
+  "wireless": {
+    "status": "passed",
+    "detail": {
+      "binding": "heater coordinates",
+      "cost": 2000,
+      "receiver": "retained"
+    }
+  },
+  "wireless_unloaded": {
+    "status": "failed",
+    "error": "((10, 200, 2), 2, {'item': 'minecraft:iron_ingot', 'count': 1}, None)"
+  },
+  "rainbow_network": {
+    "status": "passed",
+    "detail": {
+      "nine_required_tiers": "activated",
+      "bonus_energy": 500000,
+      "stopped_tier": "disabled"
+    }
+  },
+  "modes_skins": {
+    "status": "passed",
+    "detail": {
+      "recipe_model": "smoking",
+      "factory_mode": "preserves recipe model",
+      "seasonal_skins": "applied and reset"
+    }
+  },
+  "copy_reload": {
+    "status": "passed",
+    "detail": {
+      "copied": {
+        "Side0": 2,
+        "Side1": 1,
+        "Side2": 3,
+        "Side3": 0,
+        "Side4": 4,
+        "Side5": 1,
+        "AutoInput": 1,
+        "AutoOutput": 1,
+        "RedstoneMode": 4,
+        "RedstoneValue": 7,
+        "AugmentTab": 1,
+        "AutoSplit": 1
+      },
+      "facing": "west",
+      "restart": "preserved"
+    }
+  }
+}

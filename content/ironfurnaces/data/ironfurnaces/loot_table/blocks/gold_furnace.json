@@ -1,0 +1,27 @@
+{
+  "_comment": "Modified for the unofficial Iron Furnaces Horizon port (2026): adapted loot component identifiers for Horizon. Original copyright 2026 Astryxion; Apache-2.0; see LICENSE and NOTICE.",
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "modifier": {
+            "type": "minecraft:copy_components",
+            "include": [
+              "minecraft:custom_name"
+            ],
+            "source": "block_entity"
+          },
+          "name": "ironfurnaces:gold_furnace"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "ironfurnaces:blocks/gold_furnace"
+}

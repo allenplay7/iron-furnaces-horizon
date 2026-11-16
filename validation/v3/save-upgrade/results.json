@@ -1,0 +1,32 @@
+{
+  "upgrade_save": {
+    "status": "passed",
+    "detail": {
+      "saved_by": "0.2",
+      "loaded_by": "0.3",
+      "saved": {
+        "(4, 200, 2)": {
+          "energy": 2280,
+          "GeneratorTotal": 32000,
+          "GeneratorRemaining": 29720
+        },
+        "(10, 200, 2)": {
+          "energy": 6575,
+          "LaneProgress2": 57,
+          "LaneTotal2": 160,
+          "LaneCost2": 4000,
+          "LaneReserved2": 2575
+        },
+        "(16, 200, 2)": {
+          "BurnTime": 1224,
+          "BurnTotal": 1280,
+          "CookTime": 57,
+          "CookTotal": 160
+        }
+      },
+      "inventory_and_components": "retained",
+      "continued": "furnace, factory and generator",
+      "remaining_ticks_to_output": 103
+    }
+  }
+}

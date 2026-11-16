@@ -1,0 +1,13 @@
+{
+  "template": "minecraft:paper",
+  "max_stack_size": 1,
+  "rarity": "common",
+  "components": {
+    "minecraft:max_damage": 5120,
+    "minecraft:damage": 0,
+    "minecraft:cooking_fuel": {
+      "burn_time": 200,
+      "speed_multiplier": 1.0
+    }
+  }
+}

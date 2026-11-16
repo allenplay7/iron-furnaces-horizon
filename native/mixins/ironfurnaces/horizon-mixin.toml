@@ -1,0 +1,472 @@
+[mod]
+id = "ironfurnaces_native"
+version = "0.2.0"
+priority = 100
+
+[compatibility]
+horizon_revision = "9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0"
+
+[[injection]]
+id = "quick_move"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_menu_quick_move"
+helper = "quick_move.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "entity", ty = "&mut horizon_client::containers::ModBlockEntity", value = "&mut *entity" },
+  { name = "container_slots", ty = "usize", value = "container_slots" },
+  { name = "slot", ty = "usize", value = "slot" },
+  { name = "stack", ty = "&mut horizon_client::items::ItemStack", value = "&mut *stack" },
+  { name = "handled", ty = "&mut bool", value = "&mut *handled" },
+]
+
+[[module]]
+id = "runtime"
+file = "crates/horizon-client/src/game.rs"
+name = "ironfurnaces"
+source = "runtime.rs"
+
+[[module]]
+id = "rules"
+file = "crates/horizon-client/src/game.rs"
+name = "iron_furnaces_rules"
+source = "runtime_rules.rs"
+
+[[module]]
+id = "ui"
+file = "crates/horizon-client/src/game.rs"
+name = "ironfurnaces_ui"
+source = "ui.rs"
+
+[[module]]
+id = "automation"
+file = "crates/horizon-client/src/game.rs"
+name = "ironfurnaces_automation"
+source = "automation.rs"
+
+[[module]]
+id = "energy-rules"
+file = "crates/horizon-client/src/game.rs"
+name = "iron_furnaces_energy_rules"
+source = "energy_rules.rs"
+
+[[module]]
+id = "config"
+file = "crates/horizon-client/src/game.rs"
+name = "ironfurnaces_config"
+source = "config.rs"
+
+[[module]]
+id = "power"
+file = "crates/horizon-client/src/game.rs"
+name = "ironfurnaces_power"
+source = "power.rs"
+
+[[module]]
+id = "cooking"
+file = "crates/horizon-client/src/game.rs"
+name = "ironfurnaces_cooking"
+source = "cooking.rs"
+
+[[module]]
+id = "extras"
+file = "crates/horizon-client/src/game.rs"
+name = "ironfurnaces_extras"
+source = "extras.rs"
+
+[[injection]]
+id = "factory"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_block_entity"
+helper = "factory.rs"
+bindings = [
+  { name = "block", ty = "&str", value = "block" },
+  { name = "entity", ty = "&mut Option<(String, horizon_world::nbt::Compound)>", value = "&mut *entity" },
+]
+
+[[injection]]
+id = "ticks"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_block_entity_ticks"
+helper = "ticks.rs"
+bindings = [
+  { name = "block", ty = "&str", value = "block" },
+  { name = "ticks", ty = "&mut bool", value = "&mut *ticks" },
+]
+
+[[injection]]
+id = "container"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_block_entity_container"
+helper = "container.rs"
+bindings = [
+  { name = "block", ty = "&str", value = "block" },
+  { name = "container", ty = "&mut Option<horizon_client::containers::ModContainer>", value = "&mut *container" },
+]
+
+[[injection]]
+id = "tick"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_block_entity_tick"
+helper = "tick.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "pos", ty = "[i32; 3]", value = "pos" },
+  { name = "entity", ty = "&mut horizon_client::containers::ModBlockEntity", value = "&mut *entity" },
+]
+
+[[injection]]
+id = "accepts"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_container_accepts"
+helper = "automation_accepts.rs"
+bindings = [
+  { name = "game", ty = "&crate::game::Game<'_>", value = "&*self" },
+  { name = "entity", ty = "&horizon_client::containers::ModBlockEntity", value = "entity" },
+  { name = "slot", ty = "usize", value = "slot" },
+  { name = "stack", ty = "&horizon_client::items::ItemStack", value = "stack" },
+  { name = "face", ty = "Option<horizon_core::geometry::Direction>", value = "face" },
+  { name = "cancel", ty = "&mut bool", value = "&mut *cancel" },
+]
+
+[[injection]]
+id = "interact"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_right_click_block"
+helper = "interact.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "pos", ty = "[i32; 3]", value = "pos" },
+  { name = "canceled", ty = "&mut bool", value = "&mut *canceled" },
+]
+
+[[injection]]
+id = "list"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_mods"
+helper = "list.rs"
+bindings = [
+  { name = "mods", ty = "&mut Vec<crate::game::native_hooks::NativeMod>", value = "&mut *mods" },
+]
+
+[[injection]]
+id = "screen"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_screen"
+helper = "screen.rs"
+bindings = [
+  { name = "block", ty = "&str", value = "block" },
+  { name = "screen", ty = "&mut Option<crate::game::native_hooks::NativeScreen>", value = "&mut *screen" },
+]
+
+[[injection]]
+id = "draw"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_screen_draw"
+helper = "draw.rs"
+bindings = [
+  { name = "game", ty = "&crate::game::Game<'_>", value = "&*self" },
+  { name = "block", ty = "&str", value = "block" },
+  { name = "data", ty = "&[i32]", value = "data" },
+  { name = "batch", ty = "&mut horizon_client::hud::HudBatch", value = "&mut *batch" },
+  { name = "origin", ty = "[f32; 2]", value = "origin" },
+]
+
+[[injection]]
+id = "xp_before"
+kind = "HEAD"
+target = "horizon_client::game::lan_actions::Game<'_>::lan_guest_packet"
+helper = "xp_before.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "host", ty = "&mut crate::game::lan::LanHost", value = "&mut *host" },
+  { name = "conn", ty = "u32", value = "conn" },
+  { name = "packet", ty = "&horizon_protocol::packets::play::Serverbound", value = "&packet" },
+]
+
+[[module]]
+id = "slot-state"
+file = "crates/horizon-client/src/menu.rs"
+name = "ironfurnaces_slots"
+visibility = "pub"
+source = "slot_state.rs"
+
+[[injection]]
+id = "slot-rules"
+kind = "HEAD"
+target = "horizon_client_lib::menu::native_menu_slot_rules"
+helper = "slot_rules.rs"
+bindings = [
+  { name = "menu", ty = "&str", value = "menu" },
+  { name = "slot", ty = "usize", value = "slot" },
+  { name = "stack", ty = "&horizon_client::items::ItemStack", value = "stack" },
+  { name = "may_place", ty = "&mut bool", value = "&mut *may_place" },
+  { name = "max_stack", ty = "&mut u32", value = "&mut *max_stack" },
+]
+
+[[injection]]
+id = "remove"
+kind = "HEAD"
+target = "horizon_client::game::spill::GameLevel<'_>::remove_entity"
+helper = "remove.rs"
+bindings = [
+  { name = "level", ty = "&mut crate::game::GameLevel<'_>", value = "&mut *self" },
+  { name = "pos", ty = "horizon_core::position::BlockPos", value = "pos" },
+  { name = "side_effects", ty = "bool", value = "side_effects" },
+]
+
+[[injection]]
+id = "bucket-extraction"
+kind = "RETURN"
+target = "horizon_client::game::machines::Containers<'_>::can_take"
+helper = "automation_take.rs"
+bindings = [
+  { name = "allowed", ty = "bool", value = "$value" },
+  { name = "containers", ty = "&Containers<'_>", value = "&*self" },
+  { name = "view", ty = "&View", value = "view" },
+  { name = "slot", ty = "usize", value = "slot" },
+  { name = "stack", ty = "&ItemStack", value = "stack" },
+  { name = "face", ty = "horizon_core::geometry::Direction", value = "face" },
+]
+
+[[injection]]
+id = "ui-data"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::OpenNativeScreen::set_data"
+helper = "ui_data.rs"
+bindings = [
+  { name = "screen", ty = "&mut OpenNativeScreen", value = "&mut *self" },
+  { name = "window", ty = "i32", value = "window" },
+  { name = "id", ty = "i16", value = "id" },
+  { name = "value", ty = "i16", value = "value" },
+]
+
+[[injection]]
+id = "ui-click"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_screen_click"
+helper = "ui_click.rs"
+bindings = [
+  { name = "block", ty = "&str", value = "block" },
+  { name = "data", ty = "&[i32]", value = "data" },
+  { name = "at", ty = "[f32; 2]", value = "at" },
+  { name = "right", ty = "bool", value = "right" },
+  { name = "button", ty = "&mut Option<i32>", value = "&mut *button" },
+]
+
+[[injection]]
+id = "ui-tooltip"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_screen_tooltip"
+helper = "ui_tooltip.rs"
+bindings = [
+  { name = "game", ty = "&crate::game::Game<'_>", value = "&*self" },
+  { name = "block", ty = "&str", value = "block" },
+  { name = "data", ty = "&[i32]", value = "data" },
+  { name = "at", ty = "[f32; 2]", value = "at" },
+  { name = "lines", ty = "&mut Vec<String>", value = "&mut *lines" },
+]
+
+[[injection]]
+id = "ui-button"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_menu_button_v2"
+helper = "ui_button.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "pos", ty = "[i32; 3]", value = "pos" },
+  { name = "entity", ty = "&mut horizon_client::containers::ModBlockEntity", value = "&mut *entity" },
+  { name = "id", ty = "i32", value = "id" },
+  { name = "carried", ty = "&mut Option<horizon_client::items::ItemStack>", value = "&mut *carried" },
+]
+
+[[injection]]
+id = "ui-item-tooltip"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_tooltip"
+helper = "ui_item_tooltip.rs"
+bindings = [
+  { name = "game", ty = "&crate::game::Game<'_>", value = "&*self" },
+  { name = "stack", ty = "&horizon_client::items::ItemStack", value = "stack" },
+  { name = "lines", ty = "&mut Vec<(horizon_client::text::Text, u32)>", value = "&mut *lines" },
+]
+
+[[injection]]
+id = "automation-comparator"
+kind = "RETURN"
+target = "horizon_client::game::machines::Containers<'_>::signal"
+helper = "automation_comparator.rs"
+bindings = [
+  { name = "value", ty = "i32", value = "$value" },
+  { name = "containers", ty = "&Containers<'_>", value = "&*self" },
+  { name = "view", ty = "&View", value = "view" },
+]
+
+[[injection]]
+id = "automation-restore"
+kind = "RETURN"
+target = "horizon_client::game::native_hooks::Game<'_>::put_back_mod_block_entity"
+helper = "automation_restore.rs"
+bindings = [
+  { name = "value", ty = "()", value = "$value" },
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "pos", ty = "(i32, i32, i32)", value = "pos" },
+]
+
+[[injection]]
+id = "automation-signal-source"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::GameLevel<'_>::native_is_signal_source"
+helper = "automation_signal_source.rs"
+bindings = [
+  { name = "level", ty = "&crate::game::GameLevel<'_>", value = "&*self" },
+  { name = "state", ty = "horizon_world::registry::BlockStateId", value = "state" },
+  { name = "source", ty = "&mut bool", value = "&mut *source" },
+]
+
+[[injection]]
+id = "automation-has-analog"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::GameLevel<'_>::native_has_analog_output"
+helper = "automation_has_analog.rs"
+bindings = [
+  { name = "level", ty = "&crate::game::GameLevel<'_>", value = "&*self" },
+  { name = "state", ty = "horizon_world::registry::BlockStateId", value = "state" },
+  { name = "output", ty = "&mut bool", value = "&mut *output" },
+]
+
+[[injection]]
+id = "automation-signal"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::GameLevel<'_>::native_block_signal"
+helper = "automation_signal.rs"
+bindings = [
+  { name = "level", ty = "&crate::game::GameLevel<'_>", value = "&*self" },
+  { name = "pos", ty = "horizon_core::position::BlockPos", value = "pos" },
+  { name = "signal", ty = "&mut i32", value = "&mut *signal" },
+]
+
+[[injection]]
+id = "automation-analog"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::GameLevel<'_>::native_analog_output"
+helper = "automation_analog.rs"
+bindings = [
+  { name = "level", ty = "&crate::game::GameLevel<'_>", value = "&*self" },
+  { name = "pos", ty = "horizon_core::position::BlockPos", value = "pos" },
+  { name = "output", ty = "&mut i32", value = "&mut *output" },
+]
+
+[[injection]]
+id = "config-register"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_register_configs"
+helper = "config_register.rs"
+bindings = [{ name = "configs", ty = "&mut Vec<crate::game::native_configs::NativeConfig>", value = "&mut *configs" }]
+
+[[injection]]
+id = "config-load"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_config_loading"
+helper = "config_load.rs"
+bindings = [{ name = "config", ty = "&crate::game::native_configs::NativeConfigFile", value = "config" }]
+
+[[injection]]
+id = "config-reload"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_config_reloading"
+helper = "config_load.rs"
+bindings = [{ name = "config", ty = "&crate::game::native_configs::NativeConfigFile", value = "config" }]
+
+[[injection]]
+id = "config-unload"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_config_unloading"
+helper = "config_unload.rs"
+bindings = [{ name = "config", ty = "&crate::game::native_configs::NativeConfigFile", value = "config" }]
+
+[[injection]]
+id = "energy-register"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_block_entity_energy"
+helper = "extras_energy.rs"
+bindings = [
+  { name = "block", ty = "&str", value = "block" },
+  { name = "energy", ty = "&mut Option<horizon_client::containers::ModEnergyBuffer>", value = "&mut *energy" },
+]
+
+[[injection]]
+id = "energy-live"
+kind = "HEAD"
+cancellable = true
+target = "horizon_client::game::machines::native_energy::Game<'_>::native_energy_at"
+helper = "extras_energy_at.rs"
+bindings = [
+  { name = "game", ty = "&crate::game::Game<'_>", value = "&*self" },
+  { name = "dimension", ty = "&str", value = "dimension" },
+  { name = "pos", ty = "[i32; 3]", value = "pos" },
+]
+
+[[injection]]
+id = "placed"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_place_block"
+helper = "extras_place.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "stack", ty = "&horizon_client::items::ItemStack", value = "stack" },
+  { name = "pos", ty = "[i32; 3]", value = "pos" },
+]
+
+[[injection]]
+id = "heater-drop"
+kind = "HEAD"
+target = "horizon_client::game::spill::Pending::record"
+helper = "extras_drop.rs"
+bindings = [
+  { name = "pending", ty = "&mut Pending", value = "&mut *self" },
+  { name = "pos", ty = "[i32; 3]", value = "pos" },
+  { name = "entity", ty = "&horizon_client::containers::BlockEntity", value = "entity" },
+  { name = "block", ty = "&str", value = "block" },
+]
+
+[[injection]]
+id = "rainbow-coal"
+kind = "HEAD"
+cancellable = true
+target = "horizon_client::game::explosion::Game<'_>::explosion_hit_block"
+helper = "extras_explosion.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "pos", ty = "[i32; 3]", value = "pos" },
+]
+
+[[injection]]
+id = "heater-item-bar"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_item_bar"
+helper = "extras_bar.rs"
+bindings = [
+  { name = "stack", ty = "&horizon_client::items::ItemStack", value = "stack" },
+  { name = "bar", ty = "&mut Option<(i32, u32)>", value = "&mut *bar" },
+]
+
+[[injection]]
+id = "owner-logout"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_player_logged_out"
+helper = "extras_logout.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "player", ty = "u128", value = "player" },
+]
+
+[[injection]]
+id = "power-maintenance"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_level_tick_post"
+helper = "power_maintenance.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "dimension", ty = "&str", value = "dimension" },
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "tag_name": "launcher@0.2.69",
+    "target_commitish": "4626921895df51521be64d485ee763412de2917c",
+    "published_at": "2026-11-16T00:57:57Z"
+  },
+  {
+    "tag_name": "launcher@0.2.68",
+    "target_commitish": "2e1c2acf7146e2d758776b7f8fd12f59fc7320a8",
+    "published_at": "2026-11-15T18:53:16Z"
+  },
+  {
+    "tag_name": "launcher@0.2.67",
+    "target_commitish": "dc98c26af40fe2976c7a71a5d9cbabe2ebfd2ce3",
+    "published_at": "2026-11-15T14:40:52Z"
+  },
+  {
+    "tag_name": "launcher@0.2.66",
+    "target_commitish": "edc16dcc2ef3776ab7e33f6293b915192ad2e912",
+    "published_at": "2026-11-15T01:03:18Z"
+  },
+  {
+    "tag_name": "launcher@0.2.65",
+    "target_commitish": "ec85e818d88dd530aa9a4f4b4a84e92ff163be64",
+    "published_at": "2026-11-14T18:12:36Z"
+  },
+  {
+    "tag_name": "launcher@0.2.64",
+    "target_commitish": "f4d8d62c31ec2b08046faded7bef1b476783f319",
+    "published_at": "2026-11-14T01:58:33Z"
+  },
+  {
+    "tag_name": "nightly",
+    "target_commitish": "9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0",
+    "published_at": "2026-11-13T07:47:16Z"
+  },
+  {
+    "tag_name": "launcher@0.2.63",
+    "target_commitish": "36eb98b6f6ec4f22649cbe65bbfd32bc0dc2083f",
+    "published_at": "2026-11-13T01:39:57Z"
+  },
+  {
+    "tag_name": "launcher@0.2.62",
+    "target_commitish": "f24ee1accf1c816736e6e067939d04f3853f474e",
+    "published_at": "2026-11-12T16:37:22Z"
+  },
+  {
+    "tag_name": "launcher@0.2.61",
+    "target_commitish": "a5dbd2c5c1d618b8b174f42bc58d3b4b09e86837",
+    "published_at": "2026-11-12T03:07:34Z"
+  },
+  {
+    "tag_name": "launcher@0.2.60",
+    "target_commitish": "ae0c0273f5fb0b5b4a38810be180e029568ba22c",
+    "published_at": "2026-11-11T22:38:48Z"
+  },
+  {
+    "tag_name": "launcher@0.2.59",
+    "target_commitish": "221d303a902220f92c2fd3d9f6496dce9b670c7e",
+    "published_at": "2026-11-10T23:08:39Z"
+  },
+  {
+    "tag_name": "launcher@0.2.58",
+    "target_commitish": "9d524a11f0f67ff8afada00daddbec9e94917815",
+    "published_at": "2026-11-09T10:08:35Z"
+  },
+  {
+    "tag_name": "launcher@0.2.57",
+    "target_commitish": "cec9a29e0f896cc147a5983e536cfb9834b5ef15",
+    "published_at": "2026-11-09T05:35:41Z"
+  },
+  {
+    "tag_name": "launcher@0.2.56",
+    "target_commitish": "b6d002a72386ee7313f9f8f281ed05535bf33554",
+    "published_at": "2026-11-08T21:54:09Z"
+  },
+  {
+    "tag_name": "launcher@0.2.55",
+    "target_commitish": "11102a56510c0a1b546339ab45e1b141c85e8ebc",
+    "published_at": "2026-11-08T14:50:52Z"
+  },
+  {
+    "tag_name": "launcher@0.2.54",
+    "target_commitish": "aedfd10c9314ccc0f07869fe58e33285747959da",
+    "published_at": "2026-11-08T07:56:06Z"
+  },
+  {
+    "tag_name": "launcher@0.2.53",
+    "target_commitish": "3e06612e08550009e6f5f91d997ec78f87bb9490",
+    "published_at": "2026-11-08T02:49:15Z"
+  },
+  {
+    "tag_name": "launcher@0.2.52",
+    "target_commitish": "4df2329711a8d51b971a6aa7b6696d520080714c",
+    "published_at": "2026-11-08T02:03:50Z"
+  },
+  {
+    "tag_name": "launcher@0.2.51",
+    "target_commitish": "159b5c4be67a941939993ae1b23ca27abfb615f1",
+    "published_at": "2026-11-08T01:02:25Z"
+  },
+  {
+    "tag_name": "launcher@0.2.50",
+    "target_commitish": "1fe21fb861002308bbdb055dddc1a3edbd21218e",
+    "published_at": "2026-11-07T17:04:03Z"
+  },
+  {
+    "tag_name": "launcher@0.2.49",
+    "target_commitish": "ebcfa2263aa3d8e399aa993b1e05daf42eb4cfa0",
+    "published_at": "2026-11-07T07:11:55Z"
+  },
+  {
+    "tag_name": "nightly-2026-11-08",
+    "target_commitish": "fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca",
+    "published_at": "2026-11-08T15:14:22Z"
+  },
+  {
+    "tag_name": "nightly-2026-11-07",
+    "target_commitish": "2ebf00a0281c592f79191e76fce0e7d522c6f425",
+    "published_at": "2026-11-07T18:34:22Z"
+  },
+  {
+    "tag_name": "launcher@0.2.48",
+    "target_commitish": "13be1a9e4f8887626f20b41128e22ae414ec5722",
+    "published_at": "2026-11-06T23:59:08Z"
+  },
+  {
+    "tag_name": "launcher@0.2.47",
+    "target_commitish": "089a7c1242d404bd66b24e0d388d58361a527cd6",
+    "published_at": "2026-11-06T09:08:17Z"
+  },
+  {
+    "tag_name": "launcher@0.2.46",
+    "target_commitish": "10b0942e4f515c6dacc5485fb7c95acc7aa429bf",
+    "published_at": "2026-11-06T08:43:45Z"
+  },
+  {
+    "tag_name": "launcher@0.2.45",
+    "target_commitish": "2993ef0b205e7f6fb9478a1af9fd5084b31a5e5a",
+    "published_at": "2026-11-06T01:38:19Z"
+  },
+  {
+    "tag_name": "launcher@0.2.44",
+    "target_commitish": "86a9d9e6697bdd731433414653ab323343c51df3",
+    "published_at": "2026-11-05T21:04:24Z"
+  },
+  {
+    "tag_name": "launcher@0.2.43",
+    "target_commitish": "383b8986521ead200a09c9105695c4db717f319f",
+    "published_at": "2026-11-05T18:24:36Z"
+  }
+]

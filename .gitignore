@@ -1,0 +1,10 @@
+.upstream/
+.build/
+target/
+__pycache__/
+*.pyc
+.horizon/
+# Historical local builds are retained on disk; publish only the migrated package.
+dist/*
+!dist/ironfurnaces-0.3.0.hmod
+!dist/ironfurnaces-0.3.0.hmod.sha256

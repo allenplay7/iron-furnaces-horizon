@@ -1,0 +1,20 @@
+{
+  "automation": {
+    "status": "passed",
+    "detail": {
+      "disabled_face": "blocked",
+      "auto_pull_push": 8,
+      "component_separation": "preserved",
+      "fuel_auto_output": "retains fuel and receiver, extracts spent bucket"
+    }
+  },
+  "wireless_unloaded": {
+    "status": "passed",
+    "detail": {
+      "source_distance": 1014,
+      "initial_chunk": "unloaded",
+      "cost": 2000,
+      "result": "one smelt"
+    }
+  }
+}

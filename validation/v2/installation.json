@@ -1,0 +1,56 @@
+{
+  "verified_at": "2026-11-15T01:00:32.2895683+10:00",
+  "instance": "iron-furnace-port",
+  "selected_version": "native-9f42064-6c4aaedde2ef",
+  "build_exit_code": 0,
+  "launcher_total_seconds": 496,
+  "installed_executable": "<user-home>\\AppData\\Roaming\\horizon-launcher\\versions\\native-9f42064-6c4aaedde2ef\\horizon-client.exe",
+  "tested_executable": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-final-under-test\\horizon-client.exe",
+  "installed_executable_sha256": "1747048f05b1f56d765c6b390018eca4cc9fbebbc588fed185b1feaad7b0292d",
+  "tested_executable_sha256": "1747048f05b1f56d765c6b390018eca4cc9fbebbc588fed185b1feaad7b0292d",
+  "executables_identical": true,
+  "packages": [
+    {
+      "filename": "ironfurnaces-0.2.0.hmod",
+      "source": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\dist\\ironfurnaces-0.2.0.hmod",
+      "installed": "<user-home>\\AppData\\Roaming\\horizon\\instances\\iron-furnace-port\\horizon-mods\\ironfurnaces-0.2.0.hmod",
+      "sha256": "416d6fbe53606088f9f486ee15043b017b5cb4d1dfdbde995caa9d14797674c9",
+      "installed_sha256": "416d6fbe53606088f9f486ee15043b017b5cb4d1dfdbde995caa9d14797674c9",
+      "identical": true
+    },
+    {
+      "filename": "ironfurnaces-0.2.0.hnmod",
+      "source": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\dist\\ironfurnaces-0.2.0.hnmod",
+      "installed": "<user-home>\\AppData\\Roaming\\horizon\\instances\\iron-furnace-port\\horizon-native-mods\\ironfurnaces-0.2.0.hnmod",
+      "sha256": "250b84ee87d4154c7c576bcbeb7175c747882c016b7aa0d3b582cc454373038e",
+      "installed_sha256": "250b84ee87d4154c7c576bcbeb7175c747882c016b7aa0d3b582cc454373038e",
+      "identical": true
+    }
+  ],
+  "enabled_mods": [
+    "mod.ironfurnaces:true",
+    "mod.ironfurnaces_native:true"
+  ],
+  "native_build_record": {
+    "base": "nightly-2026-11-13-9f42064",
+    "horizon": "9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0",
+    "base_horizon": "9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0",
+    "pinned_by": [],
+    "on_base": true,
+    "horizon_mixins": "5a64af938ec86b00d53d16a408aabc0038fb3e57",
+    "hooks": null,
+    "rust": "1.99.1",
+    "profile": "performance",
+    "target": "client",
+    "rust_target": "x86_64-pc-windows-gnu",
+    "mods": [
+      {
+        "id": "ironfurnaces_native",
+        "version": "0.2.0",
+        "sha256": "44be4c6a5d180d9dba415c32ff50a938aeb976572c5e06f5f503b71c55f078d1"
+      }
+    ],
+    "left_out": []
+  },
+  "validation_scope": "Final rendered interface suite used the byte-identical final installed executable. Power and furnace regression suites used the earlier 0.2 candidate, as recorded in their provenance. Existing user worlds were not opened by the tests."
+}

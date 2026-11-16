@@ -1,0 +1,185 @@
+{
+  "suite": "Iron Furnaces 0.2 final rendered GUI, arrow, item-bar and placement validation",
+  "status": "passed",
+  "passed_cases": 7,
+  "cases": {
+    "factories": {
+      "status": "passed",
+      "detail": {
+        "iron": {
+          "lanes": 2,
+          "progress": 80,
+          "duration": 160
+        },
+        "gold": {
+          "lanes": 4,
+          "progress": 60,
+          "duration": 120
+        },
+        "diamond": {
+          "lanes": 6,
+          "progress": 40,
+          "duration": 80
+        }
+      }
+    },
+    "generator": {
+      "status": "passed",
+      "detail": {
+        "energy": 3200,
+        "rate": 40
+      }
+    },
+    "controls": {
+      "status": "passed",
+      "detail": {
+        "augment_slot_limit": 1,
+        "augment_channels": "installed via GUI",
+        "augment_removal": "returned via GUI",
+        "side_cycle": "forward and reverse",
+        "auto_input_output_split": true,
+        "redstone_mode": 4,
+        "redstone_value": 1,
+        "reset_sides": true
+      }
+    },
+    "heater": {
+      "status": "passed",
+      "detail": {
+        "energy": 640000,
+        "capacity": 1000000,
+        "receiver": "bound",
+        "sneak_main_item_empty_offhand": "kept heater closed",
+        "sneak_empty_main_occupied_offhand": "preserved skin"
+      }
+    },
+    "coal": {
+      "status": "passed",
+      "detail": {
+        "remaining_uses": [
+          5120,
+          2560,
+          512
+        ],
+        "visual_review": "Full green, half yellow, low red-orange bars"
+      }
+    },
+    "emerald": {
+      "status": "passed",
+      "detail": {
+        "tier": "emerald",
+        "checkpoints": [
+          "idle",
+          "half",
+          "near-full",
+          "complete"
+        ],
+        "output": "minecraft:iron_ingot",
+        "visual_review": "Inspect the captured PNGs; appearance is not asserted."
+      }
+    },
+    "owner": {
+      "status": "passed",
+      "detail": {
+        "placement": "real held block use",
+        "owner_matches_player": true
+      }
+    }
+  },
+  "screenshot_count": 12,
+  "visual_review": {
+    "status": "passed",
+    "method": "Each original 1280x720 PNG was opened and inspected individually after the test run.",
+    "notes": "Some captures include the host tutorial toast above the menu; it does not obscure controls. No material visual defects were found.",
+    "screenshots": {
+      "factory-2-lanes-half.png": {
+        "file": "visual/factory-2-lanes-half.png",
+        "sha256": "ccb53bde7b99329b9184a7ac9e8b385859344641ea31896af6e88dd1f6cf664d",
+        "finding": "Two active input/output lanes align with half-filled downward arrows; energy counter and settings are readable."
+      },
+      "factory-4-lanes-half.png": {
+        "file": "visual/factory-4-lanes-half.png",
+        "sha256": "de402d0bd7115fc1da8a477eed651ad46c1530fe5aa1108bfa1979ce82e97440",
+        "finding": "Four active input/output lanes align with half-filled downward arrows."
+      },
+      "factory-6-lanes-half.png": {
+        "file": "visual/factory-6-lanes-half.png",
+        "sha256": "c309aed876d8de6c11e96552b16ceac1f507ce49f769a9a0386bb1a9bf7e7fa4",
+        "finding": "Six active input/output lanes align with half-filled downward arrows."
+      },
+      "generator-active.png": {
+        "file": "visual/generator-active.png",
+        "sha256": "e93c2879f36484186e82bab1c35983b447aad95c7e7463a0d8624262390181b5",
+        "finding": "Active flame, fuel slot, energy meter, 40 FE/t rate and 3200/80000 FE counter render clearly."
+      },
+      "augments-installed.png": {
+        "file": "visual/augments-installed.png",
+        "sha256": "acf5cb5e7bb59df06f9cfb934da534b08241748219346af789a1951a94915eaf",
+        "finding": "All three colored augment channels show installed items; tab return button and spare augment remain visible."
+      },
+      "settings-configured.png": {
+        "file": "visual/settings-configured.png",
+        "sha256": "f61edfc03614102b5f95a5bf4d0c00148fcf97aeb5e0aeb62c0dcf4a6fe8b62d",
+        "finding": "Auto In, Auto Out, Auto-split and S shortcut show enabled states; redstone mode S and value 1 are legible."
+      },
+      "heater-bound.png": {
+        "file": "visual/heater-bound.png",
+        "sha256": "3cf9a3ce18445cdf5406359493eb6304ff97bb3e49ae65aaec62095405725e92",
+        "finding": "Bound receiver, 640000/1000000 FE label and partial energy bar render correctly in the transmitter menu."
+      },
+      "rainbow-coal-bars.png": {
+        "file": "visual/rainbow-coal-bars.png",
+        "sha256": "5b89ac066d96737996f637f9f211feebcb24b26ed0db409de606968b2291a4a9",
+        "finding": "Unused, half-used and low remaining coal show full green, half yellow and short red-orange durability bars."
+      },
+      "furnace-idle.png": {
+        "file": "visual/furnace-idle.png",
+        "sha256": "76f02628ce856e50aea316c627c8763c1faf9cd2d971a877c95944b62dfd4888",
+        "finding": "Idle arrow and flame silhouettes appear directly on the furnace background, with no gray rectangle."
+      },
+      "furnace-half.png": {
+        "file": "visual/furnace-half.png",
+        "sha256": "aa22e974fa46b33c9b0dd2092fa80c79ab76a981aaecf2abcb21a73a4c8cf45f",
+        "finding": "The arrow is half filled after 20/40 ticks and the flame is active; no gray rectangle."
+      },
+      "furnace-near-full.png": {
+        "file": "visual/furnace-near-full.png",
+        "sha256": "b0150ec664f21ec45051d314ef6f750189374db0dc8f40dcf054d390c304e822",
+        "finding": "The arrow is nearly full after 39/40 ticks; no gray rectangle."
+      },
+      "furnace-complete.png": {
+        "file": "visual/furnace-complete.png",
+        "sha256": "248bfbe22868e5740ddce6df247da079ffba89b2f5fb1cd6c518933b59cb4315",
+        "finding": "After tick 40 the arrow resets and one iron ingot appears in the output; paid flame remains active."
+      }
+    }
+  },
+  "binary": {
+    "path": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-final-under-test\\horizon-client.exe",
+    "sha256": "1747048f05b1f56d765c6b390018eca4cc9fbebbc588fed185b1feaad7b0292d"
+  },
+  "horizon_commit": "9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0",
+  "mixin_commit": "5a64af938ec86b00d53d16a408aabc0038fb3e57",
+  "harness": {
+    "path": "tools/check_power_visual.py",
+    "sha256": "b1e81bb902040e7c77c061c045d41c7c2abfbdd4237b49fcd944fe2f3b79bf0d"
+  },
+  "control_tool": "<user-home>/AppData/Roaming/horizon-launcher/versions/nightly-2026-11-13-9f42064/horizon-ctl.exe",
+  "resources": "<user-home>/AppData/Roaming/horizon-launcher/versions/nightly-2026-11-13-9f42064/.local/horizon-client/26.3",
+  "source_run_directory": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-final-visual",
+  "evidence_files": {
+    "results": "visual/results.json",
+    "commands": "visual/evidence.json"
+  },
+  "earlier_attempts": [
+    {
+      "file": "visual/initial-fixture-attempt.json",
+      "result": "Harness expected inventory but native custom menus are reported as container; assertion corrected to accept the actual menu type."
+    },
+    {
+      "file": "visual/heater-fix-attempt.json",
+      "result": "Factory, generator and controls passed; transmitter stayed on playing screen. Added normal menu opening through the native heater interaction hook. The same visual inspection also identified an inert baked S shortcut, which was wired to Auto-split. Both fixes pass in this final run."
+    }
+  ],
+  "limits": "This suite verifies one integrated rendered game. It does not establish independent-client multiplayer or unrelated third-party mod compatibility."
+}

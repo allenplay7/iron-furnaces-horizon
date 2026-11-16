@@ -1,0 +1,8 @@
+{
+  "ironfurnaces-0.2.0.hmod": "416d6fbe53606088f9f486ee15043b017b5cb4d1dfdbde995caa9d14797674c9",
+  "ironfurnaces-0.2.0.hnmod": "250b84ee87d4154c7c576bcbeb7175c747882c016b7aa0d3b582cc454373038e"
+}
++ "<user-home>\Documents\ChatGPT\Import ATM10 to RUST\.build\target\fast\cargo-horizon-mod.exe" check "<user-home>\Documents\ChatGPT\Import ATM10 to RUST\dist\ironfurnaces-0.2.0.hmod" --json
+{"ok":true,"report":{"api":"0.2","api_level":null,"capabilities":["registries"],"game":null,"id":"ironfurnaces","kind":"mod","requires":[],"sha256":"416d6fbe53606088f9f486ee15043b017b5cb4d1dfdbde995caa9d14797674c9","side":"both","signed":false,"size":273784,"version":"0.2.0"}}
++ "<user-home>\Documents\ChatGPT\Import ATM10 to RUST\.build\target\fast\cargo-horizon-mod.exe" check "<user-home>\Documents\ChatGPT\Import ATM10 to RUST\dist\ironfurnaces-0.2.0.hnmod" --json
+{"ok":true,"report":{"api":"native-1/9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0/5a64af938ec86b00d53d16a408aabc0038fb3e57","api_level":null,"capabilities":[],"game":"26.3","id":"ironfurnaces_native","kind":"native-mod","requires":[],"sha256":"250b84ee87d4154c7c576bcbeb7175c747882c016b7aa0d3b582cc454373038e","side":null,"signed":false,"size":60611,"version":"0.2.0"}}

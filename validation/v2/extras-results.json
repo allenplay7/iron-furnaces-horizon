@@ -1,0 +1,72 @@
+{
+  "suite": "Iron Furnaces 0.2 extras",
+  "status": "passed",
+  "passed_cases": 3,
+  "binary": {
+    "path": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-under-test\\horizon-client.exe",
+    "sha256": "5c0450ca58ee2f9a899fb37f9679e89b1e5d166524045b49b896cdef2349e06a"
+  },
+  "provenance_note": "These three passing cases used the first frozen v2 native executable. Heater and ordinary-furnace passing cases used the corrected content loot codec; TNT passed before that content correction. Subsequent native GUI/S-button/Coal-bar changes require separate final-binary validation.",
+  "cases": {
+    "heater_drop_place": {
+      "status": "passed",
+      "detail": {
+        "energy": 543210,
+        "heater_drops": 1,
+        "receiver_drops": 1,
+        "placement": "restored energy"
+      },
+      "source_results": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras-loot\\results.json",
+      "source_evidence": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras-loot\\evidence.json"
+    },
+    "furnace_self_drop": {
+      "status": "passed",
+      "detail": {
+        "iron_furnace": 1,
+        "raw_iron_contents": 2,
+        "survival_tool": "netherite_pickaxe"
+      },
+      "source_results": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras-furnace\\results.json",
+      "source_evidence": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras-furnace\\evidence.json"
+    },
+    "rainbow_explosion": {
+      "status": "passed",
+      "detail": {
+        "explosive": "minecraft:tnt",
+        "rainbow_coal": 1,
+        "original_inventory": "destroyed"
+      },
+      "source_results": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras-2\\results.json",
+      "source_evidence": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras-2\\evidence.json"
+    }
+  },
+  "earlier_failures": [
+    {
+      "case": "heater_drop_place",
+      "observed_status": "failed",
+      "observed_error": "('Heater block duplicated or lost', {'armor': [{'item': None, 'part': 'head', 'slot': 500}, {'item': None, 'part': 'chest', 'slot': 501}, {'item': None, 'part': 'legs', 'slot': 502}, {'item': None, 'part': 'feet', 'slot': 503}], 'carried': None, 'counts': {'ironfurnaces:item_heater': 1, 'minecraft:netherite_pickaxe': 1}, 'held': {'components': '{\"minecraft:damage\":1}', 'count': 1, 'damage': 1, 'durability_left': 2030, 'item': 'minecraft:netherite_pickaxe', 'max_damage': 2031}, 'hotbar': [{'components': '{\"minecraft:damage\":1}', 'count': 1, 'damage': 1, 'durability_left': 2030, 'item': 'minecraft:netherite_pickaxe', 'max_damage': 2031, 'slot': 0}, {'components': '{\"minecraft:custom_data\":{HeaterPosX:4,HeaterPosY:200,HeaterPosZ:2}}', 'count': 1, 'item': 'ironfurnaces:item_heater', 'slot': 1}, {'item': None, 'slot': 2}, {'item': None, 'slot': 3}, {'item': None, 'slot': 4}, {'item': None, 'slot': 5}, {'item': None, 'slot': 6}, {'item': None, 'slot': 7}, {'item': None, 'slot': 8}], 'main': [{'item': None, 'slot': 9}, {'item': None, 'slot': 10}, {'item': None, 'slot': 11}, {'item': None, 'slot': 12}, {'item': None, 'slot': 13}, {'item': None, 'slot': 14}, {'item': None, 'slot': 15}, {'item': None, 'slot': 16}, {'item': None, 'slot': 17}, {'item': None, 'slot': 18}, {'item': None, 'slot': 19}, {'item': None, 'slot': 20}, {'item': None, 'slot': 21}, {'item': None, 'slot': 22}, {'item': None, 'slot': 23}, {'item': None, 'slot': 24}, {'item': None, 'slot': 25}, {'item': None, 'slot': 26}, {'item': None, 'slot': 27}, {'item': None, 'slot': 28}, {'item': None, 'slot': 29}, {'item': None, 'slot': 30}, {'item': None, 'slot': 31}, {'item': None, 'slot': 32}, {'item': None, 'slot': 33}, {'item': None, 'slot': 34}, {'item': None, 'slot': 35}], 'offhand': {'item': None, 'slot': 504}, 'selected': 1})",
+      "cause": "Old upstream loot condition discriminator was not understood by pinned Horizon; no heater self-drop.",
+      "resolution": "Corrected content loot codec, then passed in v2-extras-loot.",
+      "source_results": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras\\results.json",
+      "source_evidence": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras\\evidence.json"
+    },
+    {
+      "case": "heater_drop_place",
+      "observed_status": "failed",
+      "observed_error": "('Heater block duplicated or lost', {'armor': [{'item': None, 'part': 'head', 'slot': 500}, {'item': None, 'part': 'chest', 'slot': 501}, {'item': None, 'part': 'legs', 'slot': 502}, {'item': None, 'part': 'feet', 'slot': 503}], 'carried': None, 'counts': {'ironfurnaces:item_heater': 1, 'minecraft:netherite_pickaxe': 1}, 'held': {'components': '{\"minecraft:damage\":1}', 'count': 1, 'damage': 1, 'durability_left': 2030, 'item': 'minecraft:netherite_pickaxe', 'max_damage': 2031}, 'hotbar': [{'components': '{\"minecraft:damage\":1}', 'count': 1, 'damage': 1, 'durability_left': 2030, 'item': 'minecraft:netherite_pickaxe', 'max_damage': 2031, 'slot': 0}, {'components': '{\"minecraft:custom_data\":{HeaterPosX:4,HeaterPosY:200,HeaterPosZ:2}}', 'count': 1, 'item': 'ironfurnaces:item_heater', 'slot': 1}, {'item': None, 'slot': 2}, {'item': None, 'slot': 3}, {'item': None, 'slot': 4}, {'item': None, 'slot': 5}, {'item': None, 'slot': 6}, {'item': None, 'slot': 7}, {'item': None, 'slot': 8}], 'main': [{'item': None, 'slot': 9}, {'item': None, 'slot': 10}, {'item': None, 'slot': 11}, {'item': None, 'slot': 12}, {'item': None, 'slot': 13}, {'item': None, 'slot': 14}, {'item': None, 'slot': 15}, {'item': None, 'slot': 16}, {'item': None, 'slot': 17}, {'item': None, 'slot': 18}, {'item': None, 'slot': 19}, {'item': None, 'slot': 20}, {'item': None, 'slot': 21}, {'item': None, 'slot': 22}, {'item': None, 'slot': 23}, {'item': None, 'slot': 24}, {'item': None, 'slot': 25}, {'item': None, 'slot': 26}, {'item': None, 'slot': 27}, {'item': None, 'slot': 28}, {'item': None, 'slot': 29}, {'item': None, 'slot': 30}, {'item': None, 'slot': 31}, {'item': None, 'slot': 32}, {'item': None, 'slot': 33}, {'item': None, 'slot': 34}, {'item': None, 'slot': 35}], 'offhand': {'item': None, 'slot': 504}, 'selected': 1})",
+      "cause": "Repeated missing heater self-drop after explicitly gathering existing drops; confirmed loot bug rather than pickup scatter.",
+      "resolution": "Corrected content loot codec, then passed in v2-extras-loot.",
+      "source_results": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras-2\\results.json",
+      "source_evidence": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras-2\\evidence.json"
+    },
+    {
+      "case": "furnace_self_drop",
+      "observed_status": "failed",
+      "observed_error": "Control ('break', 10, 200, 2, '--timeout', 20) failed:  {\"error\":\"block [10, 200, 2] is 6.1 blocks away, out of reach (4.5); goto it first\"}\n",
+      "cause": "Harness teleport had not been acknowledged before mining; break reported 6.1 blocks away.",
+      "resolution": "Added six client ticks after positioning; focused test passed in v2-extras-furnace.",
+      "source_results": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras-loot\\results.json",
+      "source_evidence": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-extras-loot\\evidence.json"
+    }
+  ]
+}

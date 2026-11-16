@@ -1,0 +1,17 @@
+{
+  "_comment": "Modified for the unofficial Iron Furnaces Horizon port (2026): adapted loader conditions and selected the pack's plating recipe. Original copyright 2026 Astryxion; Apache-2.0; see LICENSE and NOTICE.",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "GXG",
+    "###"
+  ],
+  "key": {
+    "#": "#c:ingots/iron",
+    "X": "#c:ingots/copper",
+    "G": "#c:glass_blocks/colorless"
+  },
+  "result": {
+    "id": "ironfurnaces:upgrade_iron2"
+  }
+}

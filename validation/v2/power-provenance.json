@@ -1,0 +1,21 @@
+{
+  "binary": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-under-test\\horizon-client.exe",
+  "sha256": "5c0450ca58ee2f9a899fb37f9679e89b1e5d166524045b49b896cdef2349e06a",
+  "mode": "windowed, offscreen, actual local server",
+  "results": {
+    "passed": 16,
+    "failed": 0
+  },
+  "initial_attempt": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\power-v2-gameplay\\results.json",
+  "focused_recheck": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\power-v2-recheck\\results.json",
+  "command_evidence": [
+    "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\power-v2-gameplay\\evidence.json",
+    "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\power-v2-recheck\\evidence.json"
+  ],
+  "fixture_corrections": {
+    "automation": "Disabled the west fuel-output face in a fixture with chests on both sides so the spent bucket must leave through the east face being asserted.",
+    "wireless_unloaded": "Waited until teleport destinations were actually loaded and the heater inventory/binding initialized; wait-ready alone returned before new streaming work started."
+  },
+  "native_changes_between_attempts": false,
+  "content_note": "These power tests preceded the loot-schema fix. Survival drop tests are recorded separately."
+}

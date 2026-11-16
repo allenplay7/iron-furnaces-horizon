@@ -1,0 +1,18 @@
+{
+  "_comment": "Modified for the unofficial Iron Furnaces Horizon port (2026): adapted loader conditions and selected the pack's plating recipe. Original copyright 2026 Astryxion; Apache-2.0; see LICENSE and NOTICE.",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "PXP",
+    "#R#"
+  ],
+  "key": {
+    "#": "#c:stones",
+    "P": "minecraft:paper",
+    "R": "#c:dusts/redstone",
+    "X": "minecraft:repeater"
+  },
+  "result": {
+    "id": "ironfurnaces:augment_generator"
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "timings": {
+    "status": "passed",
+    "detail": {
+      "copper": {
+        "ticks": 180,
+        "first_batch": 1
+      },
+      "iron": {
+        "ticks": 160,
+        "first_batch": 1
+      },
+      "silver": {
+        "ticks": 140,
+        "first_batch": 1
+      },
+      "gold": {
+        "ticks": 120,
+        "first_batch": 1
+      },
+      "diamond": {
+        "ticks": 80,
+        "first_batch": 1
+      },
+      "emerald": {
+        "ticks": 40,
+        "first_batch": 1
+      },
+      "crystal": {
+        "ticks": 40,
+        "first_batch": 1
+      },
+      "obsidian": {
+        "ticks": 20,
+        "first_batch": 1
+      },
+      "netherite": {
+        "ticks": 5,
+        "first_batch": 1
+      },
+      "million": {
+        "ticks": 20,
+        "first_batch": 64
+      },
+      "allthemodium": {
+        "ticks": 5,
+        "first_batch": 16
+      },
+      "vibranium": {
+        "ticks": 3,
+        "first_batch": 32
+      },
+      "unobtainium": {
+        "ticks": 1,
+        "first_batch": 64
+      }
+    }
+  },
+  "economics": {
+    "status": "passed",
+    "detail": {
+      "ordinary_tiers": 9,
+      "outputs_per_coal": 8
+    }
+  },
+  "augments": {
+    "status": "passed",
+    "detail": {
+      "speed": 4,
+      "fuel": 16,
+      "smoking": {
+        "recipe_ticks": 200,
+        "furnace_ticks": 160,
+        "mode_installed": true
+      },
+      "blasting": {
+        "recipe_ticks": 200,
+        "furnace_ticks": 160,
+        "mode_installed": true
+      }
+    }
+  },
+  "upgrades": {
+    "status": "passed",
+    "detail": {
+      "modded": "iron->gold",
+      "vanilla": "furnace->iron",
+      "invalid": "rejected",
+      "inventory_and_work": "preserved",
+      "empty_burning_upgrade": {
+        "before": 1120,
+        "after": 840
+      }
+    }
+  },
+  "menu": {
+    "status": "passed",
+    "detail": {
+      "result_slot_insertion": "rejected",
+      "invalid_fuel": "rejected",
+      "component_max_stack_size": {
+        "input": 1,
+        "player": 1
+      },
+      "shift_extraction": 8,
+      "recipe_xp": {
+        "before": 0,
+        "after": 5
+      }
+    }
+  },
+  "hoppers": {
+    "status": "passed",
+    "detail": {
+      "top_input": "passed",
+      "side_fuel": "passed",
+      "bottom_output": 8
+    }
+  },
+  "blocked": {
+    "status": "passed",
+    "detail": {
+      "full": "input, fuel and output preserved",
+      "different_item": "input, fuel and output preserved",
+      "different_components": "rejected"
+    }
+  },
+  "batch_capacity": {
+    "status": "passed",
+    "detail": {
+      "available_output_spaces": 3,
+      "consumed_inputs": 3,
+      "remaining_inputs": 61,
+      "blocked_next_batch": "preserved"
+    }
+  },
+  "remainders": {
+    "status": "passed",
+    "detail": {
+      "lava_bucket": "empty bucket retained",
+      "wet_sponge": "sponge plus water bucket"
+    }
+  },
+  "augment_swap": {
+    "status": "passed",
+    "detail": {
+      "efficiency_to_speed": {
+        "old_burn_ticks": 3181,
+        "new_burn_ticks": 0,
+        "free_outputs": 0
+      },
+      "mode_change": {
+        "old_burn_ticks": 1261,
+        "new_burn_ticks": 0,
+        "free_outputs": 0
+      },
+      "skin_reset": {
+        "augment": "retained",
+        "paid_fuel": "preserved"
+      }
+    }
+  },
+  "persistence": {
+    "status": "passed",
+    "detail": {
+      "saved": {
+        "slots": [
+          {
+            "count": 9,
+            "item": "minecraft:raw_iron"
+          },
+          null,
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_fuel"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "burn": 3181,
+        "progress": 20
+      },
+      "reloaded": {
+        "slots": [
+          {
+            "count": 9,
+            "item": "minecraft:raw_iron"
+          },
+          null,
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_fuel"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "burn": 3181,
+        "progress": 20
+      },
+      "continued_cooking": "passed"
+    }
+  }
+}

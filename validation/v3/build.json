@@ -1,0 +1,70 @@
+{
+  "base": "developer-85b5bcca-ironfurnaces-test",
+  "horizon": "85b5bcca7c79bb470b90bdb5914b413aa66fe7ae",
+  "horizon_mixins": "e59da9094f0c2fdda6c627fe9eff22dec6a906f0",
+  "rust": "1.99.1",
+  "profile": "optimized",
+  "route": "prebuilt",
+  "left_out": [],
+  "target": "client",
+  "rust_target": "x86_64-pc-windows-gnu",
+  "secs": 73,
+  "mods": [
+    {
+      "id": "ironfurnaces",
+      "version": "0.3.0",
+      "sha256": "6c52b3fd77f5c37cc6da53d55d2dffc47d50d5c826eae92b89618b96dd34f309",
+      "internals": []
+    }
+  ],
+  "libraries": [
+    {
+      "file": "iron_furnaces_horizon.dll",
+      "sha256": "d23919e296d2507b98cbaaa061866cdb3909c449814cef1237f5bbaf1cbe5b8d",
+      "kind": "mod",
+      "mod": "ironfurnaces",
+      "identity": "85b5bcca7c79bb470b90bdb5914b413aa66fe7ae ironfurnaces 0.3.0 1.99.1"
+    },
+    {
+      "file": "horizon_patch.dll",
+      "sha256": "8449b67bc025e7a5e68d9927d71fb95205e5460efec506488a0731d2d1e6ad16",
+      "kind": "patch",
+      "mod": "horizon_patch",
+      "identity": "85b5bcca7c79bb470b90bdb5914b413aa66fe7ae horizon_patch 0 1.99.1"
+    }
+  ],
+  "sdk": {
+    "package_format": 6,
+    "commit": "85b5bcca7c79bb470b90bdb5914b413aa66fe7ae",
+    "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: x86_64-pc-windows-gnu\nrelease: 1.99.1\nLLVM version: 23.1.1",
+    "target": "x86_64-pc-windows-gnu",
+    "profile": "release",
+    "side": "client",
+    "game_features": [
+      "audio",
+      "controllers",
+      "friends",
+      "horizon-extras",
+      "system-allocator"
+    ]
+  },
+  "runtime_sha256": {
+    "dxcompiler.dll": "0689e2fee0a1c9df8662a59680469f24e2a3ad7ce6bbbcc9284f7a83172bfc59",
+    "horizon-client.exe": "5699037a47c9d93fd9e65dc1fa0da7977230756acc49953d70ff9c14de90e9f3",
+    "horizon_core.dll": "1a1b1cf7adf3e5e2ec3f9f04cd071d4712cf32f95d106f679b0274cc95636236",
+    "horizon_engine_slots.dll": "2db13fce03bf0f7b82968f4552e9411220491c9fce1eba6c7d32166fb8a14e92",
+    "horizon_mod_host.dll": "f724ac342ae69fa35ddd0682bf918be412ba43eea0371337c22b58234dbdceb8",
+    "horizon_mod_runtime.dll": "eea91a654a59ff8b14ba58af1e9ba74d7b09fde43604108cb024c0deec836db3",
+    "horizon_mod_wasm.dll": "7248d02c9a03da6f4707d1da9bb7d6cc7566e496008d2903715fd04536a2cef1",
+    "horizon_patch.dll": "8449b67bc025e7a5e68d9927d71fb95205e5460efec506488a0731d2d1e6ad16",
+    "iron_furnaces_horizon.dll": "d23919e296d2507b98cbaaa061866cdb3909c449814cef1237f5bbaf1cbe5b8d",
+    "libgcc_s_seh-1.dll": "368488a9089e3d89b32a3609816fa40dd02fa4cdf480a2bc86e19c7bebdc8bda",
+    "libwinpthread-1.dll": "1b801c9280f6cad8cb2a026bfa48be8c4bea07a0dc78a820d1591f900ee76f0b",
+    "mod_api.dll": "27e87da473cdb812cdd847cd6eee9cad5aa5cdc4dcbc66b9832b1cdecee48202",
+    "mod_points.dll": "36b43d80ed4d22e178c648c185617599a9a8d0a480ca70aa0818f4b98934eaf7",
+    "mod_vocab.dll": "ba6aa9c5b97974877a29de441c956c1b20dee7ae976deb8f39d2c9d22c7c3d71",
+    "std-f903e3d16df36da5.dll": "d0ad56bc27113cc091fa75f4a73824c9a5d92f64adb0083c8eb1e21c60c33324"
+  },
+  "package_sha256": "206f54998c2ff7dfbcba1ee88c2d4fb383c643810f9217b562c5cc3cfded858b",
+  "old_game_sha256": "1747048f05b1f56d765c6b390018eca4cc9fbebbc588fed185b1feaad7b0292d"
+}

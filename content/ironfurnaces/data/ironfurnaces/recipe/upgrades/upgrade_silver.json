@@ -1,0 +1,17 @@
+{
+  "_comment": "Modified for the unofficial Iron Furnaces Horizon port (2026): adapted loader conditions and selected the pack's plating recipe. Original copyright 2026 Astryxion; Apache-2.0; see LICENSE and NOTICE.",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#S#",
+    "#X#"
+  ],
+  "key": {
+    "#": "#c:ingots/silver",
+    "X": "#c:ingots/copper",
+    "S": "#minecraft:stone_tool_materials"
+  },
+  "result": {
+    "id": "ironfurnaces:upgrade_silver"
+  }
+}

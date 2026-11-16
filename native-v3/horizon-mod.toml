@@ -1,0 +1,109 @@
+id = "ironfurnaces"
+name = "Iron Furnaces"
+version = "0.3.0"
+description = "Unofficial Rust port of Astryxion's Iron Furnaces: upgraded furnaces, electric factories, generators and wireless heating."
+authors = ["Astryxion", "pizzatime", "XenoMustache", "Horizon port contributors"]
+api = "0.2"
+side = "both"
+capabilities = ["registries"]
+
+[native]
+game = "26.3"
+horizon = "85b5bcca7c79bb470b90bdb5914b413aa66fe7ae"
+mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"
+
+# Compatibility hooks for dynamic menu layout; the typed API's Screen event has no data slots.
+[[native.mixin]]
+id = "screen-data"
+target = "horizon_client::game::native_hooks::OpenNativeScreen::set_data"
+kind = "HEAD"
+helper = "src/mixins/screen_data.rs"
+bindings = [
+ { name = "screen", ty = "&mut OpenNativeScreen", value = "&mut *self" },
+ { name = "window", ty = "i32", value = "window" },
+ { name = "id", ty = "i16", value = "id" },
+ { name = "value", ty = "i16", value = "value" },
+]
+[[native.mixin]]
+id = "hidden-slots"
+target = "horizon_client::game::native_hooks::book_screen::open::Game<'_>::native_hidden_slots"
+kind = "RETURN"
+helper = "src/mixins/hidden.rs"
+bindings = [
+ { name = "game", ty = "&Game<'_>", value = "&*self" },
+ { name = "pos", ty = "Pos", value = "pos" },
+ { name = "size", ty = "usize", value = "size" },
+ { name = "value", ty = "Vec<usize>", value = "$value" },
+]
+[[native.mixin]]
+id = "menu-packet"
+target = "horizon_client::game::lan_actions::packets::Game<'_>::lan_guest_packet"
+kind = "HEAD"
+helper = "src/mixins/menu_packet.rs"
+bindings = [
+ { name = "game", ty = "&mut Game<'_>", value = "&mut *self" },
+ { name = "conn", ty = "u32", value = "conn" },
+ { name = "packet", ty = "&S", value = "&packet" },
+]
+
+[[native.module]]
+id="compatibility"
+file="crates/horizon-client/src/game.rs"
+name="ironfurnaces_compat"
+source="src/compat.rs"
+
+[[native.mixin]]
+id="analog"
+target="horizon_client::game::level_access::<GameLevel<'_> as LevelAccess>::adjust_analog_output"
+kind="RETURN"
+helper="src/mixins/analog.rs"
+bindings=[
+ { name="level", ty="&GameLevel<'_>", value="&*self" },
+ { name="pos", ty="BlockPos", value="pos" },
+ { name="value", ty="i32", value="$value" },
+]
+
+[[native.mixin]]
+id="signal"
+target="horizon_client::game::level_access::<GameLevel<'_> as LevelAccess>::adjust_signal"
+kind="RETURN"
+helper="src/mixins/signal.rs"
+bindings=[
+ { name="level", ty="&GameLevel<'_>", value="&*self" },
+ { name="pos", ty="BlockPos", value="pos" },
+ { name="value", ty="i32", value="$value" },
+]
+
+[[native.mixin]]
+id="restore"
+target="horizon_client::game::native_hooks::Game<'_>::put_back_mod_block_entity"
+kind="RETURN"
+helper="src/mixins/restore.rs"
+bindings=[
+ { name="value", ty="()", value="$value" },
+ { name="game", ty="&mut Game<'_>", value="&mut *self" },
+ { name="pos", ty="(i32,i32,i32)", value="pos" },
+]
+
+[[native.mixin]]
+id="remove"
+target="horizon_client::game::spill::GameLevel<'_>::remove_entity"
+kind="HEAD"
+helper="src/mixins/remove.rs"
+bindings=[
+ { name="level", ty="&mut GameLevel<'_>", value="&mut *self" },
+ { name="pos", ty="BlockPos", value="pos" },
+ { name="side_effects", ty="bool", value="side_effects" },
+]
+
+[[native.mixin]]
+id="heater-drop"
+target="horizon_client::game::spill::Pending::record"
+kind="HEAD"
+helper="src/mixins/heater_drop.rs"
+bindings=[
+ { name="pending", ty="&mut Pending", value="&mut *self" },
+ { name="pos", ty="[i32;3]", value="pos" },
+ { name="entity", ty="&BlockEntity", value="entity" },
+ { name="block", ty="&str", value="block" },
+]

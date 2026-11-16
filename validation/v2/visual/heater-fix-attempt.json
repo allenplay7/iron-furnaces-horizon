@@ -1,0 +1,1730 @@
+{
+  "captures": {
+    "status": "recorded",
+    "detail": {
+      "factory-2-lanes-half": {
+        "screenshot": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-visual-2\\factory-2-lanes-half.png",
+        "screen": {
+          "buttons": [],
+          "carried": null,
+          "container": [
+            -2147483648,
+            0,
+            0
+          ],
+          "craft_size": 2,
+          "screen": "container",
+          "slot_ids": "0-8 hotbar, 9-35 inventory, 100+ crafting grid (row-major), 200 crafting result, 300+ container, 500-503 armor, 504 offhand, 600+ station",
+          "slots": [
+            {
+              "item": null,
+              "slot": 0
+            },
+            {
+              "item": null,
+              "slot": 1
+            },
+            {
+              "item": null,
+              "slot": 2
+            },
+            {
+              "item": null,
+              "slot": 3
+            },
+            {
+              "item": null,
+              "slot": 4
+            },
+            {
+              "item": null,
+              "slot": 5
+            },
+            {
+              "item": null,
+              "slot": 6
+            },
+            {
+              "item": null,
+              "slot": 7
+            },
+            {
+              "item": null,
+              "slot": 8
+            },
+            {
+              "item": null,
+              "slot": 9
+            },
+            {
+              "item": null,
+              "slot": 10
+            },
+            {
+              "item": null,
+              "slot": 11
+            },
+            {
+              "item": null,
+              "slot": 12
+            },
+            {
+              "item": null,
+              "slot": 13
+            },
+            {
+              "item": null,
+              "slot": 14
+            },
+            {
+              "item": null,
+              "slot": 15
+            },
+            {
+              "item": null,
+              "slot": 16
+            },
+            {
+              "item": null,
+              "slot": 17
+            },
+            {
+              "item": null,
+              "slot": 18
+            },
+            {
+              "item": null,
+              "slot": 19
+            },
+            {
+              "item": null,
+              "slot": 20
+            },
+            {
+              "item": null,
+              "slot": 21
+            },
+            {
+              "item": null,
+              "slot": 22
+            },
+            {
+              "item": null,
+              "slot": 23
+            },
+            {
+              "item": null,
+              "slot": 24
+            },
+            {
+              "item": null,
+              "slot": 25
+            },
+            {
+              "item": null,
+              "slot": 26
+            },
+            {
+              "item": null,
+              "slot": 27
+            },
+            {
+              "item": null,
+              "slot": 28
+            },
+            {
+              "item": null,
+              "slot": 29
+            },
+            {
+              "item": null,
+              "slot": 30
+            },
+            {
+              "item": null,
+              "slot": 31
+            },
+            {
+              "item": null,
+              "slot": 32
+            },
+            {
+              "item": null,
+              "slot": 33
+            },
+            {
+              "item": null,
+              "slot": 34
+            },
+            {
+              "item": null,
+              "slot": 35
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 309
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 310
+            },
+            {
+              "item": null,
+              "slot": 315
+            },
+            {
+              "item": null,
+              "slot": 316
+            }
+          ],
+          "station": null,
+          "title": [
+            {
+              "bold": false,
+              "color": null,
+              "italic": false,
+              "text": "Iron Furnace"
+            }
+          ]
+        },
+        "menu": {
+          "carried": null,
+          "info": null,
+          "level": 0,
+          "name": null,
+          "screen": "inventory",
+          "slots": [
+            {
+              "slot": 309,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 310,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            }
+          ],
+          "station": null,
+          "xp_seed": 0
+        },
+        "slots": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_factory"
+          },
+          null,
+          null,
+          null,
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "factory-4-lanes-half": {
+        "screenshot": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-visual-2\\factory-4-lanes-half.png",
+        "screen": {
+          "buttons": [],
+          "carried": null,
+          "container": [
+            -2147483648,
+            0,
+            0
+          ],
+          "craft_size": 2,
+          "screen": "container",
+          "slot_ids": "0-8 hotbar, 9-35 inventory, 100+ crafting grid (row-major), 200 crafting result, 300+ container, 500-503 armor, 504 offhand, 600+ station",
+          "slots": [
+            {
+              "item": null,
+              "slot": 0
+            },
+            {
+              "item": null,
+              "slot": 1
+            },
+            {
+              "item": null,
+              "slot": 2
+            },
+            {
+              "item": null,
+              "slot": 3
+            },
+            {
+              "item": null,
+              "slot": 4
+            },
+            {
+              "item": null,
+              "slot": 5
+            },
+            {
+              "item": null,
+              "slot": 6
+            },
+            {
+              "item": null,
+              "slot": 7
+            },
+            {
+              "item": null,
+              "slot": 8
+            },
+            {
+              "item": null,
+              "slot": 9
+            },
+            {
+              "item": null,
+              "slot": 10
+            },
+            {
+              "item": null,
+              "slot": 11
+            },
+            {
+              "item": null,
+              "slot": 12
+            },
+            {
+              "item": null,
+              "slot": 13
+            },
+            {
+              "item": null,
+              "slot": 14
+            },
+            {
+              "item": null,
+              "slot": 15
+            },
+            {
+              "item": null,
+              "slot": 16
+            },
+            {
+              "item": null,
+              "slot": 17
+            },
+            {
+              "item": null,
+              "slot": 18
+            },
+            {
+              "item": null,
+              "slot": 19
+            },
+            {
+              "item": null,
+              "slot": 20
+            },
+            {
+              "item": null,
+              "slot": 21
+            },
+            {
+              "item": null,
+              "slot": 22
+            },
+            {
+              "item": null,
+              "slot": 23
+            },
+            {
+              "item": null,
+              "slot": 24
+            },
+            {
+              "item": null,
+              "slot": 25
+            },
+            {
+              "item": null,
+              "slot": 26
+            },
+            {
+              "item": null,
+              "slot": 27
+            },
+            {
+              "item": null,
+              "slot": 28
+            },
+            {
+              "item": null,
+              "slot": 29
+            },
+            {
+              "item": null,
+              "slot": 30
+            },
+            {
+              "item": null,
+              "slot": 31
+            },
+            {
+              "item": null,
+              "slot": 32
+            },
+            {
+              "item": null,
+              "slot": 33
+            },
+            {
+              "item": null,
+              "slot": 34
+            },
+            {
+              "item": null,
+              "slot": 35
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 308
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 309
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 310
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 311
+            },
+            {
+              "item": null,
+              "slot": 314
+            },
+            {
+              "item": null,
+              "slot": 315
+            },
+            {
+              "item": null,
+              "slot": 316
+            },
+            {
+              "item": null,
+              "slot": 317
+            }
+          ],
+          "station": null,
+          "title": [
+            {
+              "bold": false,
+              "color": null,
+              "italic": false,
+              "text": "Golden Furnace"
+            }
+          ]
+        },
+        "menu": {
+          "carried": null,
+          "info": null,
+          "level": 0,
+          "name": null,
+          "screen": "inventory",
+          "slots": [
+            {
+              "slot": 308,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 309,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 310,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 311,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            }
+          ],
+          "station": null,
+          "xp_seed": 0
+        },
+        "slots": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_factory"
+          },
+          null,
+          null,
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "factory-6-lanes-half": {
+        "screenshot": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-visual-2\\factory-6-lanes-half.png",
+        "screen": {
+          "buttons": [],
+          "carried": null,
+          "container": [
+            -2147483648,
+            0,
+            0
+          ],
+          "craft_size": 2,
+          "screen": "container",
+          "slot_ids": "0-8 hotbar, 9-35 inventory, 100+ crafting grid (row-major), 200 crafting result, 300+ container, 500-503 armor, 504 offhand, 600+ station",
+          "slots": [
+            {
+              "item": null,
+              "slot": 0
+            },
+            {
+              "item": null,
+              "slot": 1
+            },
+            {
+              "item": null,
+              "slot": 2
+            },
+            {
+              "item": null,
+              "slot": 3
+            },
+            {
+              "item": null,
+              "slot": 4
+            },
+            {
+              "item": null,
+              "slot": 5
+            },
+            {
+              "item": null,
+              "slot": 6
+            },
+            {
+              "item": null,
+              "slot": 7
+            },
+            {
+              "item": null,
+              "slot": 8
+            },
+            {
+              "item": null,
+              "slot": 9
+            },
+            {
+              "item": null,
+              "slot": 10
+            },
+            {
+              "item": null,
+              "slot": 11
+            },
+            {
+              "item": null,
+              "slot": 12
+            },
+            {
+              "item": null,
+              "slot": 13
+            },
+            {
+              "item": null,
+              "slot": 14
+            },
+            {
+              "item": null,
+              "slot": 15
+            },
+            {
+              "item": null,
+              "slot": 16
+            },
+            {
+              "item": null,
+              "slot": 17
+            },
+            {
+              "item": null,
+              "slot": 18
+            },
+            {
+              "item": null,
+              "slot": 19
+            },
+            {
+              "item": null,
+              "slot": 20
+            },
+            {
+              "item": null,
+              "slot": 21
+            },
+            {
+              "item": null,
+              "slot": 22
+            },
+            {
+              "item": null,
+              "slot": 23
+            },
+            {
+              "item": null,
+              "slot": 24
+            },
+            {
+              "item": null,
+              "slot": 25
+            },
+            {
+              "item": null,
+              "slot": 26
+            },
+            {
+              "item": null,
+              "slot": 27
+            },
+            {
+              "item": null,
+              "slot": 28
+            },
+            {
+              "item": null,
+              "slot": 29
+            },
+            {
+              "item": null,
+              "slot": 30
+            },
+            {
+              "item": null,
+              "slot": 31
+            },
+            {
+              "item": null,
+              "slot": 32
+            },
+            {
+              "item": null,
+              "slot": 33
+            },
+            {
+              "item": null,
+              "slot": 34
+            },
+            {
+              "item": null,
+              "slot": 35
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 307
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 308
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 309
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 310
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 311
+            },
+            {
+              "count": 4,
+              "item": "minecraft:raw_iron",
+              "slot": 312
+            },
+            {
+              "item": null,
+              "slot": 313
+            },
+            {
+              "item": null,
+              "slot": 314
+            },
+            {
+              "item": null,
+              "slot": 315
+            },
+            {
+              "item": null,
+              "slot": 316
+            },
+            {
+              "item": null,
+              "slot": 317
+            },
+            {
+              "item": null,
+              "slot": 318
+            }
+          ],
+          "station": null,
+          "title": [
+            {
+              "bold": false,
+              "color": null,
+              "italic": false,
+              "text": "Diamond Furnace"
+            }
+          ]
+        },
+        "menu": {
+          "carried": null,
+          "info": null,
+          "level": 0,
+          "name": null,
+          "screen": "inventory",
+          "slots": [
+            {
+              "slot": 307,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 308,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 309,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 310,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 311,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 312,
+              "stack": {
+                "count": 4,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:raw_iron",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            }
+          ],
+          "station": null,
+          "xp_seed": 0
+        },
+        "slots": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_factory"
+          },
+          null,
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "count": 4,
+            "item": "minecraft:raw_iron"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "generator-active": {
+        "screenshot": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-visual-2\\generator-active.png",
+        "screen": {
+          "buttons": [],
+          "carried": null,
+          "container": [
+            -2147483648,
+            0,
+            0
+          ],
+          "craft_size": 2,
+          "screen": "container",
+          "slot_ids": "0-8 hotbar, 9-35 inventory, 100+ crafting grid (row-major), 200 crafting result, 300+ container, 500-503 armor, 504 offhand, 600+ station",
+          "slots": [
+            {
+              "item": null,
+              "slot": 0
+            },
+            {
+              "item": null,
+              "slot": 1
+            },
+            {
+              "item": null,
+              "slot": 2
+            },
+            {
+              "item": null,
+              "slot": 3
+            },
+            {
+              "item": null,
+              "slot": 4
+            },
+            {
+              "item": null,
+              "slot": 5
+            },
+            {
+              "item": null,
+              "slot": 6
+            },
+            {
+              "item": null,
+              "slot": 7
+            },
+            {
+              "item": null,
+              "slot": 8
+            },
+            {
+              "item": null,
+              "slot": 9
+            },
+            {
+              "item": null,
+              "slot": 10
+            },
+            {
+              "item": null,
+              "slot": 11
+            },
+            {
+              "item": null,
+              "slot": 12
+            },
+            {
+              "item": null,
+              "slot": 13
+            },
+            {
+              "item": null,
+              "slot": 14
+            },
+            {
+              "item": null,
+              "slot": 15
+            },
+            {
+              "item": null,
+              "slot": 16
+            },
+            {
+              "item": null,
+              "slot": 17
+            },
+            {
+              "item": null,
+              "slot": 18
+            },
+            {
+              "item": null,
+              "slot": 19
+            },
+            {
+              "item": null,
+              "slot": 20
+            },
+            {
+              "item": null,
+              "slot": 21
+            },
+            {
+              "item": null,
+              "slot": 22
+            },
+            {
+              "item": null,
+              "slot": 23
+            },
+            {
+              "item": null,
+              "slot": 24
+            },
+            {
+              "item": null,
+              "slot": 25
+            },
+            {
+              "item": null,
+              "slot": 26
+            },
+            {
+              "item": null,
+              "slot": 27
+            },
+            {
+              "item": null,
+              "slot": 28
+            },
+            {
+              "item": null,
+              "slot": 29
+            },
+            {
+              "item": null,
+              "slot": 30
+            },
+            {
+              "item": null,
+              "slot": 31
+            },
+            {
+              "item": null,
+              "slot": 32
+            },
+            {
+              "item": null,
+              "slot": 33
+            },
+            {
+              "item": null,
+              "slot": 34
+            },
+            {
+              "item": null,
+              "slot": 35
+            },
+            {
+              "count": 1,
+              "item": "minecraft:coal",
+              "slot": 306
+            }
+          ],
+          "station": null,
+          "title": [
+            {
+              "bold": false,
+              "color": null,
+              "italic": false,
+              "text": "Iron Furnace"
+            }
+          ]
+        },
+        "menu": {
+          "carried": null,
+          "info": null,
+          "level": 0,
+          "name": null,
+          "screen": "inventory",
+          "slots": [
+            {
+              "slot": 306,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "minecraft:coal",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            }
+          ],
+          "station": null,
+          "xp_seed": 0
+        },
+        "slots": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_generator"
+          },
+          {
+            "count": 1,
+            "item": "minecraft:coal"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "augments-installed": {
+        "screenshot": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-visual-2\\augments-installed.png",
+        "screen": {
+          "buttons": [],
+          "carried": null,
+          "container": [
+            -2147483648,
+            0,
+            0
+          ],
+          "craft_size": 2,
+          "screen": "container",
+          "slot_ids": "0-8 hotbar, 9-35 inventory, 100+ crafting grid (row-major), 200 crafting result, 300+ container, 500-503 armor, 504 offhand, 600+ station",
+          "slots": [
+            {
+              "count": 1,
+              "item": "ironfurnaces:augment_speed",
+              "slot": 0
+            },
+            {
+              "item": null,
+              "slot": 1
+            },
+            {
+              "item": null,
+              "slot": 2
+            },
+            {
+              "item": null,
+              "slot": 3
+            },
+            {
+              "item": null,
+              "slot": 4
+            },
+            {
+              "item": null,
+              "slot": 5
+            },
+            {
+              "item": null,
+              "slot": 6
+            },
+            {
+              "item": null,
+              "slot": 7
+            },
+            {
+              "item": null,
+              "slot": 8
+            },
+            {
+              "item": null,
+              "slot": 9
+            },
+            {
+              "item": null,
+              "slot": 10
+            },
+            {
+              "item": null,
+              "slot": 11
+            },
+            {
+              "item": null,
+              "slot": 12
+            },
+            {
+              "item": null,
+              "slot": 13
+            },
+            {
+              "item": null,
+              "slot": 14
+            },
+            {
+              "item": null,
+              "slot": 15
+            },
+            {
+              "item": null,
+              "slot": 16
+            },
+            {
+              "item": null,
+              "slot": 17
+            },
+            {
+              "item": null,
+              "slot": 18
+            },
+            {
+              "item": null,
+              "slot": 19
+            },
+            {
+              "item": null,
+              "slot": 20
+            },
+            {
+              "item": null,
+              "slot": 21
+            },
+            {
+              "item": null,
+              "slot": 22
+            },
+            {
+              "item": null,
+              "slot": 23
+            },
+            {
+              "item": null,
+              "slot": 24
+            },
+            {
+              "item": null,
+              "slot": 25
+            },
+            {
+              "item": null,
+              "slot": 26
+            },
+            {
+              "item": null,
+              "slot": 27
+            },
+            {
+              "item": null,
+              "slot": 28
+            },
+            {
+              "item": null,
+              "slot": 29
+            },
+            {
+              "item": null,
+              "slot": 30
+            },
+            {
+              "item": null,
+              "slot": 31
+            },
+            {
+              "item": null,
+              "slot": 32
+            },
+            {
+              "item": null,
+              "slot": 33
+            },
+            {
+              "item": null,
+              "slot": 34
+            },
+            {
+              "item": null,
+              "slot": 35
+            },
+            {
+              "count": 1,
+              "item": "ironfurnaces:augment_blasting",
+              "slot": 303
+            },
+            {
+              "count": 1,
+              "item": "ironfurnaces:augment_speed",
+              "slot": 304
+            },
+            {
+              "count": 1,
+              "item": "ironfurnaces:augment_factory",
+              "slot": 305
+            }
+          ],
+          "station": null,
+          "title": [
+            {
+              "bold": false,
+              "color": null,
+              "italic": false,
+              "text": "Iron Furnace"
+            }
+          ]
+        },
+        "menu": {
+          "carried": null,
+          "info": null,
+          "level": 0,
+          "name": null,
+          "screen": "inventory",
+          "slots": [
+            {
+              "slot": 0,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "ironfurnaces:augment_speed",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 303,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "ironfurnaces:augment_blasting",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 304,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "ironfurnaces:augment_speed",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            },
+            {
+              "slot": 305,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "ironfurnaces:augment_factory",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            }
+          ],
+          "station": null,
+          "xp_seed": 0
+        },
+        "slots": [
+          null,
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_blasting"
+          },
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_speed"
+          },
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_factory"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "settings-configured": {
+        "screenshot": "<user-home>\\Documents\\ChatGPT\\Import ATM10 to RUST\\.build\\v2-visual-2\\settings-configured.png",
+        "screen": {
+          "buttons": [],
+          "carried": null,
+          "container": [
+            -2147483648,
+            0,
+            0
+          ],
+          "craft_size": 2,
+          "screen": "container",
+          "slot_ids": "0-8 hotbar, 9-35 inventory, 100+ crafting grid (row-major), 200 crafting result, 300+ container, 500-503 armor, 504 offhand, 600+ station",
+          "slots": [
+            {
+              "count": 1,
+              "item": "ironfurnaces:augment_speed",
+              "slot": 0
+            },
+            {
+              "item": null,
+              "slot": 1
+            },
+            {
+              "item": null,
+              "slot": 2
+            },
+            {
+              "item": null,
+              "slot": 3
+            },
+            {
+              "item": null,
+              "slot": 4
+            },
+            {
+              "item": null,
+              "slot": 5
+            },
+            {
+              "item": null,
+              "slot": 6
+            },
+            {
+              "item": null,
+              "slot": 7
+            },
+            {
+              "item": null,
+              "slot": 8
+            },
+            {
+              "item": null,
+              "slot": 9
+            },
+            {
+              "item": null,
+              "slot": 10
+            },
+            {
+              "item": null,
+              "slot": 11
+            },
+            {
+              "item": null,
+              "slot": 12
+            },
+            {
+              "item": null,
+              "slot": 13
+            },
+            {
+              "item": null,
+              "slot": 14
+            },
+            {
+              "item": null,
+              "slot": 15
+            },
+            {
+              "item": null,
+              "slot": 16
+            },
+            {
+              "item": null,
+              "slot": 17
+            },
+            {
+              "item": null,
+              "slot": 18
+            },
+            {
+              "item": null,
+              "slot": 19
+            },
+            {
+              "item": null,
+              "slot": 20
+            },
+            {
+              "item": null,
+              "slot": 21
+            },
+            {
+              "item": null,
+              "slot": 22
+            },
+            {
+              "item": null,
+              "slot": 23
+            },
+            {
+              "item": null,
+              "slot": 24
+            },
+            {
+              "item": null,
+              "slot": 25
+            },
+            {
+              "item": null,
+              "slot": 26
+            },
+            {
+              "item": null,
+              "slot": 27
+            },
+            {
+              "item": null,
+              "slot": 28
+            },
+            {
+              "item": null,
+              "slot": 29
+            },
+            {
+              "item": null,
+              "slot": 30
+            },
+            {
+              "item": null,
+              "slot": 31
+            },
+            {
+              "item": null,
+              "slot": 32
+            },
+            {
+              "item": null,
+              "slot": 33
+            },
+            {
+              "item": null,
+              "slot": 34
+            },
+            {
+              "item": null,
+              "slot": 35
+            },
+            {
+              "item": null,
+              "slot": 309
+            },
+            {
+              "item": null,
+              "slot": 310
+            },
+            {
+              "item": null,
+              "slot": 315
+            },
+            {
+              "item": null,
+              "slot": 316
+            }
+          ],
+          "station": null,
+          "title": [
+            {
+              "bold": false,
+              "color": null,
+              "italic": false,
+              "text": "Iron Furnace"
+            }
+          ]
+        },
+        "menu": {
+          "carried": null,
+          "info": null,
+          "level": 0,
+          "name": null,
+          "screen": "inventory",
+          "slots": [
+            {
+              "slot": 0,
+              "stack": {
+                "count": 1,
+                "custom_name": null,
+                "damage": 0,
+                "enchantments": [],
+                "item": "ironfurnaces:augment_speed",
+                "potion": null,
+                "repair_cost": 0,
+                "stored_enchantments": [],
+                "trim": null
+              }
+            }
+          ],
+          "station": null,
+          "xp_seed": 0
+        },
+        "slots": [
+          null,
+          null,
+          null,
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_blasting"
+          },
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_speed"
+          },
+          {
+            "count": 1,
+            "item": "ironfurnaces:augment_factory"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  },
+  "factories": {
+    "status": "passed",
+    "detail": {
+      "iron": {
+        "lanes": 2,
+        "progress": 80,
+        "duration": 160
+      },
+      "gold": {
+        "lanes": 4,
+        "progress": 60,
+        "duration": 120
+      },
+      "diamond": {
+        "lanes": 6,
+        "progress": 40,
+        "duration": 80
+      }
+    }
+  },
+  "generator": {
+    "status": "passed",
+    "detail": {
+      "energy": 3200,
+      "rate": 40
+    }
+  },
+  "controls": {
+    "status": "passed",
+    "detail": {
+      "augment_slot_limit": 1,
+      "augment_channels": "installed via GUI",
+      "augment_removal": "returned via GUI",
+      "side_cycle": "forward and reverse",
+      "auto_input_output_split": true,
+      "redstone_mode": 4,
+      "redstone_value": 1,
+      "reset_sides": true
+    }
+  },
+  "heater": {
+    "status": "failed",
+    "error": "('heater-bound', 'machine menu not open', {'buttons': [], 'screen': 'playing'})"
+  }
+}

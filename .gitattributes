@@ -1,0 +1,9 @@
+* text=auto eol=lf
+# Preserve original imported resources and the upstream license byte for byte.
+content/** -text
+LICENSE -text
+# The native loader fingerprints the bundled sources; clones must retain their bytes.
+native-v3/** -text
+*.png binary
+*.hmod binary
+*.hnmod binary

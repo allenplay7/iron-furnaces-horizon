@@ -1,0 +1,15 @@
+[ 0:01] Incremental rebuild: mods ironfurnaces_native (performance)
+[ 0:01] Downloading Horizon's source at 9f42064
+[ 0:01] Applying the mixins
+[ 0:41] Compiling the game (performance): 1 crates, now horizon-client
+[ 1:01] Compiling the game (performance): 463 of 468 crates, now horizon-client
+[ 1:01] Compiling the game (performance): 464 of 468 crates, now horizon-client
+[ 1:01] Compiling the game (performance): 465 of 468 crates, now horizon-game
+[ 1:01] Compiling the game (performance): 465 of 468 crates, now horizon-game
+[ 1:01] Compiling the game (performance): 466 of 468 crates, now horizon-official
+[ 4:27] Compiling the game (performance): 466 of 468 crates, now horizon-official
+[ 4:27] Compiling the game (performance): 466 of 468 crates, now horizon-official
+[ 4:27] Compiling the game (performance): 466 of 468 crates, now horizon-official
+[ 4:27] Compiling the game (performance): 467 of 468 crates, now horizon-official
+[ 4:28] Installing the build
+[ 8:14] Built in 8 min 4 s (performance, incremental)
