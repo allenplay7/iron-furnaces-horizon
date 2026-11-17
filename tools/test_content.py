@@ -25,7 +25,9 @@ class ContentTests(unittest.TestCase):
             self.assertEqual(self.files[f"assets/ironfurnaces/blockstates/{block}.json"], original.read_bytes())
             definition = self.value(f"data/ironfurnaces/horizon/block/{block}.json")
             self.assertEqual(definition["template"], "minecraft:furnace")
-            self.assertEqual(definition["state_light"]["values"]["true"], 14)
+            # The pinned registry checker supplies furnace light from the
+            # template and rejects the newer explicit state_light override.
+            self.assertNotIn("state_light", definition)
             for name in ("type", "jovial"):
                 self.assertEqual(definition["state_properties"][name], {"type": "enum", "values": ["0", "1", "2"]})
                 self.assertEqual(definition["default_state"][name], "0")
