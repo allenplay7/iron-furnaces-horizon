@@ -31,13 +31,5 @@
     "type": "0",
     "jovial": "0",
     "rainbow": "false"
-  },
-  "state_light": {
-    "property": "lit",
-    "values": {
-      "true": 14,
-      "false": 0
-    },
-    "default": 0
   }
 }

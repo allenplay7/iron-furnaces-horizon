@@ -52,9 +52,9 @@ VANILLA_TAGS = {
 }
 MANIFEST = '''id = "ironfurnaces"
 name = "Iron Furnaces"
-version = "0.2.0"
+version = "0.3.1"
 description = "Upgraded furnaces, electric factories, generators, wireless heating, upgrades and augments. Requires the Iron Furnaces native companion."
-authors = ["Astryxion", "pizzatime", "XenoMustache", "Horizon port contributors"]
+authors = ["allenplay7"]
 api = "0.2"
 side = "both"
 capabilities = ["registries"]
@@ -133,9 +133,11 @@ def block_definition(tier: str) -> dict:
     if tier == "million":
         state_properties["rainbow"] = {"type": "boolean"}
         default_state["rainbow"] = "false"
+    # The pinned registry checker predates the state_light declaration. The
+    # furnace template already supplies its lit-state emission, so leaving the
+    # override out keeps the package compatible with both checkers.
     return {"template": "minecraft:furnace", "properties": properties,
-            "state_properties": state_properties, "default_state": default_state,
-            "state_light": {"property": "lit", "values": {"true": 14, "false": 0}, "default": 0}}
+            "state_properties": state_properties, "default_state": default_state}
 
 
 def expected_states(block: str) -> set[tuple[tuple[str, str], ...]]:
