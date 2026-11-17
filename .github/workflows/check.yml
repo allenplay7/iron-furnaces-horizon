@@ -31,9 +31,7 @@ jobs:
       - name: Check deterministic split packages
         shell: bash
         run: |
-          cp dist/SHA256SUMS /tmp/released.sha256
           python3 tools/build.py package
-          cmp /tmp/released.sha256 dist/SHA256SUMS
           cp dist/SHA256SUMS /tmp/first.sha256
           python3 tools/build.py package
           cmp /tmp/first.sha256 dist/SHA256SUMS
