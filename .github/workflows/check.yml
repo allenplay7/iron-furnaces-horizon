@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: horizon-rust/horizon
-          ref: 85b5bcca7c79bb470b90bdb5914b413aa66fe7ae
+          ref: 0b14f8acfd97fa2c750e42795249dcc981178ca4
           path: .build/horizon
       - uses: actions/checkout@v4
         with:
@@ -26,14 +26,29 @@ jobs:
         run: python3 tools/check_v3.py --source .build/horizon --test
       - name: Check original art, recipes and registrations
         run: python3 tools/test_content.py
-      - name: Validate archive with Horizon's package reader
-        run: python3 tools/check_package.py --source .build/horizon
-      - name: Check deterministic split packages
-        shell: bash
+      - name: Build unified native package
+        run: python3 tools/package_v3.py
+      - name: Install the official Horizon SDK CLI from the exact engine checkout
+        run: cargo install --locked --git https://github.com/horizon-rust/horizon --rev 0b14f8acfd97fa2c750e42795249dcc981178ca4 cargo-horizon-mod
+      - name: Build official native SDK package and check it for registry submission
+        working-directory: .build/migration-v3/mod
         run: |
-          python3 tools/build.py package
-          cp dist/SHA256SUMS /tmp/first.sha256
-          python3 tools/build.py package
-          cmp /tmp/first.sha256 dist/SHA256SUMS
+          cargo horizon-mod build
+          test -f target/horizon-mod/ironfurnaces.hmod
+          cargo horizon-mod check target/horizon-mod/ironfurnaces.hmod
+      - name: Compile and test the adapter using the downloaded SDK
+        working-directory: .build/migration-v3/mod
+        run: cargo test
+      - name: Check deterministic unified package
+        run: |
+          cp dist/ironfurnaces-0.3.2.hmod.sha256 /tmp/first.sha256
+          python3 tools/package_v3.py
+          cmp /tmp/first.sha256 dist/ironfurnaces-0.3.2.hmod.sha256
+      - name: Save the SDK-verified package for launcher testing
+        uses: actions/upload-artifact@v4
+        with:
+          name: iron-furnaces-0.3.2-nightly-candidate
+          path: .build/migration-v3/mod/target/horizon-mod/ironfurnaces.hmod
+          if-no-files-found: error
       # Full game tests need the matching SDK and privately prepared Minecraft resources.
       # This workflow deliberately claims source/content checks only.

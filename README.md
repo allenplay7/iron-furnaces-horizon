@@ -11,6 +11,31 @@ Use the version that matches your Horizon installation. Do not install both vers
 | **0.2.0 — legacy API** | Nightly 2026-11-13, commit `9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0` | `.hmod` + `.hnmod` | [GitHub release](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.2.0) |
 | **0.3.1 — registry-compatible** | Nightly 2026-11-13, commit `9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0` | `.hmod` + `.hnmod` | [GitHub release](https://github.com/allenplay7/iron-furnaces-horizon/releases/tag/v0.3.1) |
 
+## Next Nightly release candidate (unpublished)
+
+The `native-v3` candidate, **0.3.2**, targets the November 18 Nightly
+(`0b14f8acfd97fa2c750e42795249dcc981178ca4`) and mod API 0.2. It is one
+native source `.hmod`, not the older `.hmod` + `.hnmod` pair. The
+downloads above are still for their original Nightly. The existing 0.3.1
+gameplay evidence does not validate the 0.3.2 candidate on this Nightly.
+
+Validation and publication gates:
+
+1. Run the source and content checks in `.github/workflows/check.yml`.
+2. Stage the package with `python3 tools/package_v3.py`. In
+   `.build/migration-v3/mod`, run `cargo horizon-mod build` with the
+   official CLI installed from the exact Nightly revision. Run
+   `cargo horizon-mod check target/horizon-mod/ironfurnaces.hmod` and
+   `cargo test` there. Use the official SDK output, not the intermediate
+   ZIP from the staging script, for any eventual release.
+3. Install the resulting native package in an isolated launcher instance
+   pinned to the same Nightly. Use the launcher's native build to verify
+   compatibility hooks, then run the [in-game regression suite](VALIDATION-0.3.md#reproduce)
+   in disposable worlds. Record the exact package SHA-256 and game pin.
+4. Publish a new GitHub release without editing the old release. For the
+   registry, follow the [manual publishing procedure](https://github.com/horizon-rust/horizon-mods#publishing-without-the-form)
+   and supply the exact-SDK build evidence.
+
 ## Install
 
 ### 0.2.0 legacy API
