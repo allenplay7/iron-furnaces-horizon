@@ -44,11 +44,20 @@ jobs:
           cp dist/ironfurnaces-0.3.2.hmod.sha256 /tmp/first.sha256
           python3 tools/package_v3.py
           cmp /tmp/first.sha256 dist/ironfurnaces-0.3.2.hmod.sha256
+      # upload-artifact v4 excludes hidden directories by default. Copy the
+      # exact official SDK output out of .build/ before uploading it.
+      - name: Stage the SDK-verified package and checksum
+        run: |
+          set -euo pipefail
+          mkdir -p release-candidate
+          cp .build/migration-v3/mod/target/horizon-mod/ironfurnaces.hmod release-candidate/ironfurnaces-0.3.2.hmod
+          (cd release-candidate && sha256sum ironfurnaces-0.3.2.hmod > SHA256SUMS)
+          cat release-candidate/SHA256SUMS
       - name: Save the SDK-verified package for launcher testing
         uses: actions/upload-artifact@v4
         with:
           name: iron-furnaces-0.3.2-nightly-candidate
-          path: .build/migration-v3/mod/target/horizon-mod/ironfurnaces.hmod
+          path: release-candidate/
           if-no-files-found: error
       # Full game tests need the matching SDK and privately prepared Minecraft resources.
       # This workflow deliberately claims source/content checks only.
